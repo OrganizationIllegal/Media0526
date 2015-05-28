@@ -24,7 +24,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 ctx.drawImage(img, 0, 0, 150, 150);
             }
 
-            img.src = "/images/img01.jpg";
+            img.src = "${vedio1}";
      
     ctx.beginPath(); 
     //ctx1.fillStyle="#CDC9C9";  
@@ -41,7 +41,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 ctx.drawImage(img, 0, 0, 80, 80);
             }
 
-            img.src = "/images/img02.jpg";
+            img.src = "${vedio2}";
      
     ctx.beginPath(); 
     //ctx1.fillStyle="#CDC9C9";  
@@ -58,7 +58,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 ctx.drawImage(img, 0, 0, 80, 80);
             }
 
-            img.src = "/images/img04.jpg";
+            img.src = "${vedio3}";
      
     ctx.beginPath(); 
     //ctx1.fillStyle="#CDC9C9";  
@@ -75,7 +75,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 ctx.drawImage(img, 0, 0, 150, 150);
             }
 
-            img.src = "/images/img05.jpg";
+            img.src = "${vedio4}";
      
     ctx.beginPath(); 
     //ctx1.fillStyle="#CDC9C9";  
@@ -144,7 +144,6 @@ function pop4(){
 			<div class="topnewsbox">
 
 				<div class="topnews" style="width:568px;border:0px;">
-				
 					<div class="topnewspic" id="hotsearchlist" style="filter:progid:DXImageTransform.Microsoft.GradientWipe(GradientSize=0.25,wipestyle=0,motion=forward)">
 						<div id="switch_0"><a href="http://www.17sucai.com/" target="_blank"><img width="314" height="143" alt="信宣传新专辑 与徐静蕾合作很紧张" src="/images/01.jpg" /></a></div>
 						<div id="switch_1"><a href="http://www.17sucai.com/" target="_blank"><img width="314" height="143" alt="蒲巴甲北京录新歌 首张EP杀青在即" src="/images/02.jpg" /></a></div>
@@ -167,16 +166,38 @@ function pop4(){
 							<li><a id="focus_6" onmouseover="show_focus_image(6);" href="http://www.17sucai.com/" target="_blank">林俊杰MV中惨遭意外车祸痛失女友</a> </li>
 						</ul>
 					</div>
-				
 				</div>
 		</div>
 	</div>
 	<div class="col-md-6">
 			<div class="row" style="height:262px;">
-				<img src="/images/star.jpg" width="98%" height="98%">
+				<!-- <img src="/images/star.jpg" width="98%" height="98%"> -->
+				<div id="myCarousel2" class="carousel slide" data-ride="carousel" data-interval="5000">
+   <!-- 轮播（Carousel）指标 -->
+   <ol class="carousel-indicators">
+      <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel2" data-slide-to="1"></li>
+      <li data-target="#myCarousel2" data-slide-to="2"></li>
+   </ol> 
+    <!-- 轮播（Carousel）项目 -->
+   <div class="carousel-inner">
+      <div class="item active">
+         <img src="${train1}" alt="First slide" style="width:570px;height:260px;">
+         <div class="carousel-caption"></div>
+      </div>
+      <div class="item">
+         <img src="${train2}" alt="Second slide" style="width:570px;height:260px;">
+         <div class="carousel-caption"></div>
+      </div>
+      <div class="item">
+         <img src="${train3}" alt="Third slide" style="width:570px;height:260px;">
+         <div class="carousel-caption"></div>
+      </div> 
+     </div>
+     </div> 
 				<div style="z-index:100;width:60%;height:40%;opacity:0.5;background:#FFE1FF;top:30%;left:20%;position:absolute;filter:alpha(opacity=50);">
 					<div style="height:100%;line-height:100%;overflow:hidden;align:center;">
-						<h1 style="text-align:center">PeiXun 培训</h1>
+						<h1 style="text-align:center"><a href="/Train">PeiXun 培训</a></h1>
 					</div>
 				</div>
 			</div>
@@ -187,10 +208,10 @@ function pop4(){
 			<div class="col-md-6">
 				<div class="row">
 					<!-- <div class="col-md-1" style="width:30px;"></div> -->
-					<div class="col-md-2" ><img src="/images/img01.jpg" style="width:110px;" title="新星新星"><img src="/images/img02.jpg" style="width:110px;" title="新星新星"></div>
-					<div class="col-md-5" style="width:263px;"><img src="/images/img03.jpg" style="width:250px;height:220px;" title="新星新星"></div>
-					<div class="col-md-2" style="padding-left:0px;"><img src="/images/img01.jpg" style="width:110px;" title="新星新星"><img src="/images/img02.jpg" style="width:110px;" title="新星新星"></div>
-					<div class="col-md-2"><img src="/images/img04.jpg" style="width:110px;" title="新星新星"><img src="/images/img05.jpg" style="width:110px;" title="新星新星"></div>
+					<div class="col-md-2" ><img src="${img1}" style="width:110px;" title="新星新星"><img src="${img2}" style="width:110px;" title="新星新星"></div>
+					<div class="col-md-5" style="width:263px;"><img src="${img3}" style="width:250px;height:220px;" title="新星新星"></div>
+					<div class="col-md-2" style="padding-left:0px;"><img src="${img4}" style="width:110px;" title="新星新星"><img src="${img5}" style="width:110px;" title="新星新星"></div>
+					<div class="col-md-2"><img src="${img6}" style="width:110px;" title="新星新星"><img src="${img7}" style="width:110px;" title="新星新星"></div>
 					<div class="col-md-1"></div>
 				</div>
 			</div>
@@ -254,7 +275,7 @@ function pop4(){
             </div>
          </div>
          <div class="modal-body">
-            <img src="/images/img01.jpg" width="500" height="300" id="image"/>
+            <img src="${vedio1}" width="500" height="300" id="image"/>
          </div>
    
       </div>      
@@ -274,7 +295,7 @@ function pop4(){
             </div>
          </div>
          <div class="modal-body">
-            <img src="/images/img02.jpg" width="500" height="300" id="image"/>
+            <img src="${vedio2}" width="500" height="300" id="image"/>
          </div>
    
       </div>      
@@ -294,7 +315,7 @@ function pop4(){
             </div>
          </div>
          <div class="modal-body">
-            <img src="/images/img04.jpg" width="500" height="300" id="image"/>
+            <img src="${vedio3}" width="500" height="300" id="image"/>
          </div>
    
       </div>      
@@ -314,7 +335,7 @@ function pop4(){
             </div>
          </div>
          <div class="modal-body">
-            <img src="/images/img05.jpg" width="500" height="300" id="image"/>
+            <img src="${vedio4}" width="500" height="300" id="image"/>
          </div>
    
       </div>      
