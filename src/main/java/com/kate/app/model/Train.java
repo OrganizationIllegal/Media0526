@@ -22,3 +22,4 @@ public class Train extends AbstractTrain implements java.io.Serializable {
 	}
 
 }
+  

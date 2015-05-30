@@ -35,6 +35,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				alert("zanting")
 			}
 	</script>
+	<style type="text/css">
+		 .yuanjiao{
+            width: 205px;
+            color: white;
+            margin: 20px;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+
+        }
+	</style>
 </head>
 <body>
 
@@ -45,10 +55,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
  		<div class="col-md-8 col-lg-8" >
  				<div id="youkuplayer" style="width:795px;height:600px">
  				</div>
+ 				<!--要播放视频列表start-->
+ 				<div >
+ 				 	<img alt="" src="images/img01.jpg"   height="150px" style="border:1px solid grey" class="yuanjiao">
+ 					<img alt="" src="images/img02.jpg"   height="150px" style="border:1px solid grey" class="yuanjiao" >
+ 					<img alt="" src="images/img03.jpg"   height="150px" style="border:1px solid grey" class="yuanjiao">
+ 				</div>
+ 				<!--要播放视频列表end-->
  		</div>
  		<!--左侧视频播放end-->
  		<!--右侧图片列表start-->
- 		<div class="col-md-4 col-lg-4" align="right" style="5px 5px">
+ 		<div class="col-md-4 col-lg-4" align="right" style="5px 5px" style="margin:10px">
  			<img alt="" src="images/img01.jpg"  width="345px" height="150px" style="border:1px solid grey">
  			<img alt="" src="images/img02.jpg"  width="345px" height="150px" style="border:1px solid grey">
  			<img alt="" src="images/img03.jpg"  width="345px" height="150px" style="border:1px solid grey">
