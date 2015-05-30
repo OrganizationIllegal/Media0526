@@ -1,80 +1,54 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8" isELIgnored="false"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>艺人详情</title>
-<link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-   <link href="/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
-   <link href="/css/news.css" rel="stylesheet">
+   <title>ABOUT US</title>
+   <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
    <script src="/js/jquery.min.js"></script>
    <script src="/bootstrap/js/bootstrap.min.js"></script>
-   <script type="text/javascript" src="http://player.youku.com/jsapi">
-		
-		player = new YKU.Player('youkuplayer',{
-			styleid: '0',
-			client_id: '6e97509b4cd3378b',
-			vid: 'XOTUxNDk2NDQ0',
-			events:{
-			onPlayStart: function(){ alert("kaishi") },
-			onPlayEnd: function(){ alert("jieshu") }
-			}
-			});
-			function playVideo(){
-			player.playVideo();
-				alert("kaishi");
-			}
-			function pauseVideo(){
-			player.pauseVideo();
-				alert("zanting")
-			}
-	</script>
-	<style type="text/css">
-		 .yuanjiao{
-            width: 205px;
-            color: white;
-            margin: 20px;
-            -webkit-border-radius: 15px;
-            -moz-border-radius: 15px;
-
-        }
-	</style>
+   <script type="text/javascript">
+   $(function(){
+	   $("#id1").click(function(){
+		   $("#artist1").css("display","block");
+		   $("#artist2").css("display","none");
+		   });
+	   $("#id2").click(function(){
+		   $("#artist2").css("display","block");
+		   $("#artist1").css("display","none");
+		   });
+	   });
+   </script>
 </head>
 <body>
-
- <div class="container">
- <jsp:include page="head.jsp" />
- 	<div class="row" style="padding-top:10px">
- 	     <!--左侧视频播放start-->
- 		<div class="col-md-8 col-lg-8" >
- 				<div id="youkuplayer" style="width:795px;height:600px">
- 				</div>
- 				<!--要播放视频列表start-->
- 				<div >
- 				 	<img alt="" src="images/img01.jpg"   height="150px" style="border:1px solid grey" class="yuanjiao">
- 					<img alt="" src="images/img02.jpg"   height="150px" style="border:1px solid grey" class="yuanjiao" >
- 					<img alt="" src="images/img03.jpg"   height="150px" style="border:1px solid grey" class="yuanjiao">
- 				</div>
- 				<!--要播放视频列表end-->
- 		</div>
- 		<!--左侧视频播放end-->
- 		<!--右侧图片列表start-->
- 		<div class="col-md-4 col-lg-4" align="right" style="5px 5px" style="margin:10px">
- 			<img alt="" src="images/img01.jpg"  width="345px" height="150px" style="border:1px solid grey">
- 			<img alt="" src="images/img02.jpg"  width="345px" height="150px" style="border:1px solid grey">
- 			<img alt="" src="images/img03.jpg"  width="345px" height="150px" style="border:1px solid grey">
- 			<img alt="" src="images/img04.jpg"  width="345px" height="150px" style="border:1px solid grey">
- 			<img alt="" src="images/img05.jpg"  width="345px" height="150px" style="border:1px solid grey">
- 		</div>
- 		<!--右侧图片列表end-->
- 	</div>
- 	<jsp:include page="foot.jsp" />
- </div>
+<div class="container">
+		<jsp:include page="head.jsp" />
+		<div class="row" style="margin-top:30px;">
+		<div class="col-md-9">
+		<div style="overflow-y:auto; width:850px; height:850px;">
+		<div id="artist1">
+		<div style="text-align:center;"><img alt="" src="/images/artist/big1.PNG" style="width:700px;height:550px;"></div>
+		<div style="text-align:center;margin-top:30px;"><img alt="" src="/images/artist/jianjie1.PNG"></div>
+		</div>
+		<div id="artist2">
+		<div style="text-align:center;"><img alt="" src="/images/artist/big1.PNG" style="width:700px;height:550px;"></div>
+		<div style="text-align:center;margin-top:30px;"><img alt="" src="/images/artist/jianjie1.PNG"></div>
+		</div>
+		</div>	
+		</div>
+		<div class="col-md-3" style="text-align:right;">	
+		<div id="id1" style="margin-bottom:10px;"><img alt="" src="/images/artist/xiao1.PNG" style="width:240px;height:170px;cursor:pointer;"></div>
+		<div id="id2" style="margin-bottom:10px;"><img alt="" src="/images/artist/xiao2.PNG" style="width:240px;height:170px;cursor:pointer;"></div>
+		<div id="id3" style="margin-bottom:10px;"><img alt="" src="/images/artist/xiao3.PNG" style="width:240px;height:170px;cursor:pointer;"></div>
+		<div id="id4" style="margin-bottom:10px;"><img alt="" src="/images/artist/xiao4.PNG" style="width:240px;height:170px;cursor:pointer;"></div>
+		<div id="id5" style="margin-bottom:10px;"><img alt="" src="/images/artist/xiao5.PNG" style="width:240px;height:170px;cursor:pointer;"></div>	
+		</div>
+		</div>
+		<jsp:include page="foot.jsp" />
+</div>
 </body>
 </html>

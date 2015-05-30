@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
+    pageEncoding="utf-8" isELIgnored="false"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
 String path = request.getContextPath();
@@ -22,14 +22,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
  		<div class="col-md-8 col-lg-8">
  			<div class="row" style="height:500px;">
  				<div class="col-md-4 col-lg-4">
- 					<img alt="" src="" height="">
+ 					<img alt="" src="${star1.starImg}" height="">
  				</div>
  				<div class="col-md-8 col-lg-8">
- 					<c:if test="${not empty var1}">
+ 					<c:if test="${not empty star1.chineseName}">
  						<div class="form-group">
 					    <label class="col-sm-3 control-label">姓名：</label>
 					    <div class="col-sm-9">
-					      <label class="col-sm-3 control-label"></label>
+					      ${star1.chineseName}
 					    </div>
 						</div>
 					</c:if>
