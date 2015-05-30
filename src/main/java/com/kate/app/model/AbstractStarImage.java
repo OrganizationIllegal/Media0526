@@ -11,6 +11,7 @@ public abstract class AbstractStarImage implements java.io.Serializable {
 
 	private Integer id;
 	private String img;
+	private Integer starNum;
 
 	// Constructors
 
@@ -19,8 +20,9 @@ public abstract class AbstractStarImage implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public AbstractStarImage(String img) {
+	public AbstractStarImage(String img, Integer starNum) {
 		this.img = img;
+		this.starNum = starNum;
 	}
 
 	// Property accessors
@@ -39,6 +41,14 @@ public abstract class AbstractStarImage implements java.io.Serializable {
 
 	public void setImg(String img) {
 		this.img = img;
+	}
+
+	public Integer getStarNum() {
+		return this.starNum;
+	}
+
+	public void setStarNum(Integer starNum) {
+		this.starNum = starNum;
 	}
 
 }

@@ -8,7 +8,7 @@
     <class name="com.kate.app.model.TrainDetail" table="train_detail" catalog="media">
         <id name="id" type="java.lang.Integer">
             <column name="id" />
-            <generator class="identity" />
+            <generator class="native" />
         </id>
         <many-to-one name="train" class="com.kate.app.model.Train" fetch="select">
             <column name="train_id" />

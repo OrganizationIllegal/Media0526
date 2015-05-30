@@ -1,8 +1,5 @@
 package com.kate.app.dao;
 
-import com.kate.app.model.TrainDetail;
-
-import java.util.Date;
 import java.util.List;
 
 import org.hibernate.LockMode;
@@ -10,7 +7,8 @@ import org.hibernate.Query;
 import org.hibernate.criterion.Example;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Repository;
+
+import com.kate.app.model.TrainDetail;
 
 /**
  * A data access object (DAO) providing persistence and search support for
@@ -23,7 +21,7 @@ import org.springframework.stereotype.Repository;
  * @see com.kate.app.model.TrainDetail
  * @author MyEclipse Persistence Tools
  */
-@Repository 
+
 public class TrainDetailDAO extends BaseHibernateDAO {
 	private static final Logger log = LoggerFactory
 			.getLogger(TrainDetailDAO.class);
@@ -151,20 +149,6 @@ public class TrainDetailDAO extends BaseHibernateDAO {
 			log.debug("attach successful");
 		} catch (RuntimeException re) {
 			log.error("attach failed", re);
-			throw re;
-		}
-	}
-	public List findByTrain(String trainid, int value) {
-		log.debug("finding TrainDetail instance with property: " + trainid
-				+ ", value: " + value);
-		try {
-			String queryString = "from TrainDetail as model where model.train."
-					+ trainid + "= ?";
-			Query queryObject = getSession().createQuery(queryString);
-			queryObject.setParameter(0, value);
-			return queryObject.list();
-		} catch (RuntimeException re) {
-			log.error("find by property name failed", re);
 			throw re;
 		}
 	}

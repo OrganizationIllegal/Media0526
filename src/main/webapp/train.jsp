@@ -20,7 +20,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     ctx.scale(1,1.1);
     ctx.fillStyle="#1c4587";  
     ctx.arc(75,78,75,0,Math.PI*2); // context.arc(x,y,r,sAngle,eAngle,counterclockwise)
-    ctx.fill();　　　　　　//使用ctx.fill();就是填充色；          　　　　　                  
+    ctx.fill();
 })
     $(function(){
     var can = document.getElementById("can2");
@@ -29,7 +29,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     ctx.lineWidth = "3";
     ctx.strokeStyle="#3c78d8";  
     ctx.arc(25,25,20,0,Math.PI*2); // context.arc(x,y,r,sAngle,eAngle,counterclockwise)
-    ctx.stroke();　　　　　　//使用ctx.fill();就是填充色；          　　　　　                  
+    ctx.stroke();
 })
      $(function(){
     var can = document.getElementById("can3");
@@ -38,7 +38,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     ctx.lineWidth = "3";
     ctx.strokeStyle="#3c78d8";  
     ctx.arc(25,25,20,0,Math.PI*2); // context.arc(x,y,r,sAngle,eAngle,counterclockwise)
-    ctx.stroke();　　　　　　//使用ctx.fill();就是填充色；          　　　　　                  
+    ctx.stroke();
 })
       $(function(){
     var can = document.getElementById("can4");
@@ -47,7 +47,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     ctx.lineWidth = "3";
     ctx.strokeStyle="#5b0f00";  
     ctx.arc(25,25,20,0,Math.PI*2); // context.arc(x,y,r,sAngle,eAngle,counterclockwise)
-    ctx.stroke();　　　　　　//使用ctx.fill();就是填充色；          　　　　　                  
+    ctx.stroke();
 })
       $(function(){
     var can = document.getElementById("can5");
@@ -55,7 +55,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     ctx.beginPath(); 
     ctx.fillStyle="rgba(28, 69, 134, 0.5)"; 
     ctx.arc(75,75,70,0,Math.PI*2); // context.arc(x,y,r,sAngle,eAngle,counterclockwise)
-    ctx.fill();　　　　　　//使用ctx.fill();就是填充色；          　　　　　                  
+    ctx.fill();
 })
         $(function(){
     var can = document.getElementById("can6");
@@ -64,7 +64,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     ctx.scale(2,1);
     ctx.fillStyle="rgba(28, 69, 134, 0.5)"; 
     ctx.arc(50,50,50,0,Math.PI*2); // context.arc(x,y,r,sAngle,eAngle,counterclockwise)
-    ctx.fill();　　　　　　//使用ctx.fill();就是填充色；          　　　　　                  
+    ctx.fill();
 })
    </script>
    <!-- 绘制圆形 end -->

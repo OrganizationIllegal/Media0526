@@ -13,8 +13,8 @@ public class StarVedio extends AbstractStarVedio implements
 	}
 
 	/** full constructor */
-	public StarVedio(String vedio) {
-		super(vedio);
+	public StarVedio(Integer starNum, String videoPic, String videoId) {
+		super(starNum, videoPic, videoId);
 	}
 
 }

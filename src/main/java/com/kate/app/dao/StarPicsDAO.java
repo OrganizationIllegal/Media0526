@@ -8,29 +8,29 @@ import org.hibernate.criterion.Example;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.kate.app.model.StarImage;
+import com.kate.app.model.StarPics;
 
 /**
  * A data access object (DAO) providing persistence and search support for
- * StarImage entities. Transaction control of the save(), update() and delete()
+ * StarPics entities. Transaction control of the save(), update() and delete()
  * operations can directly support Spring container-managed transactions or they
  * can be augmented to handle user-managed Spring transactions. Each of these
  * methods provides additional information for how to configure it for the
  * desired type of transaction control.
  * 
- * @see com.kate.app.model.StarImage
+ * @see com.kate.app.model.StarPics
  * @author MyEclipse Persistence Tools
  */
 
-public class StarImageDAO extends BaseHibernateDAO {
+public class StarPicsDAO extends BaseHibernateDAO {
 	private static final Logger log = LoggerFactory
-			.getLogger(StarImageDAO.class);
+			.getLogger(StarPicsDAO.class);
 	// property constants
-	public static final String IMG = "img";
-	public static final String STAR_NUM = "starNum";
+	public static final String STAR_ID = "starId";
+	public static final String STAR_IMAGE = "starImage";
 
-	public void save(StarImage transientInstance) {
-		log.debug("saving StarImage instance");
+	public void save(StarPics transientInstance) {
+		log.debug("saving StarPics instance");
 		try {
 			getSession().save(transientInstance);
 			log.debug("save successful");
@@ -40,8 +40,8 @@ public class StarImageDAO extends BaseHibernateDAO {
 		}
 	}
 
-	public void delete(StarImage persistentInstance) {
-		log.debug("deleting StarImage instance");
+	public void delete(StarPics persistentInstance) {
+		log.debug("deleting StarPics instance");
 		try {
 			getSession().delete(persistentInstance);
 			log.debug("delete successful");
@@ -51,11 +51,11 @@ public class StarImageDAO extends BaseHibernateDAO {
 		}
 	}
 
-	public StarImage findById(java.lang.Integer id) {
-		log.debug("getting StarImage instance with id: " + id);
+	public StarPics findById(java.lang.Integer id) {
+		log.debug("getting StarPics instance with id: " + id);
 		try {
-			StarImage instance = (StarImage) getSession().get(
-					"com.kate.app.model.StarImage", id);
+			StarPics instance = (StarPics) getSession().get(
+					"com.kate.app.model.StarPics", id);
 			return instance;
 		} catch (RuntimeException re) {
 			log.error("get failed", re);
@@ -63,11 +63,11 @@ public class StarImageDAO extends BaseHibernateDAO {
 		}
 	}
 
-	public List findByExample(StarImage instance) {
-		log.debug("finding StarImage instance by example");
+	public List findByExample(StarPics instance) {
+		log.debug("finding StarPics instance by example");
 		try {
 			List results = getSession()
-					.createCriteria("com.kate.app.model.StarImage")
+					.createCriteria("com.kate.app.model.StarPics")
 					.add(Example.create(instance)).list();
 			log.debug("find by example successful, result size: "
 					+ results.size());
@@ -79,10 +79,10 @@ public class StarImageDAO extends BaseHibernateDAO {
 	}
 
 	public List findByProperty(String propertyName, Object value) {
-		log.debug("finding StarImage instance with property: " + propertyName
+		log.debug("finding StarPics instance with property: " + propertyName
 				+ ", value: " + value);
 		try {
-			String queryString = "from StarImage as model where model."
+			String queryString = "from StarPics as model where model."
 					+ propertyName + "= ?";
 			Query queryObject = getSession().createQuery(queryString);
 			queryObject.setParameter(0, value);
@@ -93,18 +93,18 @@ public class StarImageDAO extends BaseHibernateDAO {
 		}
 	}
 
-	public List findByImg(Object img) {
-		return findByProperty(IMG, img);
+	public List findByStarId(Object starId) {
+		return findByProperty(STAR_ID, starId);
 	}
 
-	public List findByStarNum(Object starNum) {
-		return findByProperty(STAR_NUM, starNum);
+	public List findByStarImage(Object starImage) {
+		return findByProperty(STAR_IMAGE, starImage);
 	}
 
 	public List findAll() {
-		log.debug("finding all StarImage instances");
+		log.debug("finding all StarPics instances");
 		try {
-			String queryString = "from StarImage";
+			String queryString = "from StarPics";
 			Query queryObject = getSession().createQuery(queryString);
 			return queryObject.list();
 		} catch (RuntimeException re) {
@@ -113,10 +113,10 @@ public class StarImageDAO extends BaseHibernateDAO {
 		}
 	}
 
-	public StarImage merge(StarImage detachedInstance) {
-		log.debug("merging StarImage instance");
+	public StarPics merge(StarPics detachedInstance) {
+		log.debug("merging StarPics instance");
 		try {
-			StarImage result = (StarImage) getSession().merge(detachedInstance);
+			StarPics result = (StarPics) getSession().merge(detachedInstance);
 			log.debug("merge successful");
 			return result;
 		} catch (RuntimeException re) {
@@ -125,8 +125,8 @@ public class StarImageDAO extends BaseHibernateDAO {
 		}
 	}
 
-	public void attachDirty(StarImage instance) {
-		log.debug("attaching dirty StarImage instance");
+	public void attachDirty(StarPics instance) {
+		log.debug("attaching dirty StarPics instance");
 		try {
 			getSession().saveOrUpdate(instance);
 			log.debug("attach successful");
@@ -136,8 +136,8 @@ public class StarImageDAO extends BaseHibernateDAO {
 		}
 	}
 
-	public void attachClean(StarImage instance) {
-		log.debug("attaching clean StarImage instance");
+	public void attachClean(StarPics instance) {
+		log.debug("attaching clean StarPics instance");
 		try {
 			getSession().lock(instance, LockMode.NONE);
 			log.debug("attach successful");

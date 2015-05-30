@@ -13,8 +13,8 @@ public class StarImage extends AbstractStarImage implements
 	}
 
 	/** full constructor */
-	public StarImage(String img) {
-		super(img);
+	public StarImage(String img, Integer starNum) {
+		super(img, starNum);
 	}
 
 }

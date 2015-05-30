@@ -8,7 +8,7 @@
     <class name="com.kate.app.model.StarInfo" table="star_info" catalog="media">
         <id name="id" type="java.lang.Integer">
             <column name="id" />
-            <generator class="identity" />
+            <generator class="native" />
         </id>
         <property name="chineseName" type="java.lang.String">
             <column name="chinese_name" />
@@ -78,6 +78,9 @@
         </property>
         <property name="musicalstyle" type="java.lang.String">
             <column name="musicalstyle" />
+        </property>
+        <property name="starNum" type="java.lang.Integer">
+            <column name="star_num" />
         </property>
         <set name="winExperiences" inverse="true">
             <key>

@@ -30,7 +30,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     //ctx1.fillStyle="#CDC9C9";  
     ctx.arc(75,75,60,0,Math.PI*2); // context.arc(x,y,r,sAngle,eAngle,counterclockwise)
     //ctx1.fill();　　　　　　//使用ctx.fill();就是填充色；
-    ctx.clip();           　　　　　                  
+    ctx.clip();       
 })
    $(function(){
     var can = document.getElementById("can2");
@@ -47,7 +47,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     //ctx1.fillStyle="#CDC9C9";  
     ctx.arc(40,40,40,0,Math.PI*2); // context.arc(x,y,r,sAngle,eAngle,counterclockwise)
     //ctx1.fill();　　　　　　//使用ctx.fill();就是填充色；
-    ctx.clip();           　　　　　                
+    ctx.clip();          
 })
    $(function(){
     var can = document.getElementById("can3");
@@ -64,7 +64,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     //ctx1.fillStyle="#CDC9C9";  
     ctx.arc(40,40,40,0,Math.PI*2); // context.arc(x,y,r,sAngle,eAngle,counterclockwise)
     //ctx1.fill();　　　　　　//使用ctx.fill();就是填充色；
-    ctx.clip();           　　　　　                
+    ctx.clip();          
 })
    $(function(){
     var can = document.getElementById("can4");

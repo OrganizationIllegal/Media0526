@@ -16,6 +16,7 @@ public abstract class AbstractTrain implements java.io.Serializable {
 	private String trainName;
 	private String trainDesc;
 	private String trainImage;
+	private Integer trainId;
 	private Set trainDetails = new HashSet(0);
 
 	// Constructors
@@ -26,10 +27,11 @@ public abstract class AbstractTrain implements java.io.Serializable {
 
 	/** full constructor */
 	public AbstractTrain(String trainName, String trainDesc, String trainImage,
-			Set trainDetails) {
+			Integer trainId, Set trainDetails) {
 		this.trainName = trainName;
 		this.trainDesc = trainDesc;
 		this.trainImage = trainImage;
+		this.trainId = trainId;
 		this.trainDetails = trainDetails;
 	}
 
@@ -65,6 +67,14 @@ public abstract class AbstractTrain implements java.io.Serializable {
 
 	public void setTrainImage(String trainImage) {
 		this.trainImage = trainImage;
+	}
+
+	public Integer getTrainId() {
+		return this.trainId;
+	}
+
+	public void setTrainId(Integer trainId) {
+		this.trainId = trainId;
 	}
 
 	public Set getTrainDetails() {

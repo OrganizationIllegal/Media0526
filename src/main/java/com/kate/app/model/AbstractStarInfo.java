@@ -36,6 +36,7 @@ public abstract class AbstractStarInfo implements java.io.Serializable {
 	private String sex;
 	private String specialty;
 	private String musicalstyle;
+	private Integer starNum;
 	private Set winExperiences = new HashSet(0);
 
 	// Constructors
@@ -52,7 +53,7 @@ public abstract class AbstractStarInfo implements java.io.Serializable {
 			String occupation, String brokerfirm, String animal,
 			String representativeworks, String residence,
 			String gratuateunivercity, String achivements, String nationality,
-			String sex, String specialty, String musicalstyle,
+			String sex, String specialty, String musicalstyle, Integer starNum,
 			Set winExperiences) {
 		this.chineseName = chineseName;
 		this.starImg = starImg;
@@ -77,6 +78,7 @@ public abstract class AbstractStarInfo implements java.io.Serializable {
 		this.sex = sex;
 		this.specialty = specialty;
 		this.musicalstyle = musicalstyle;
+		this.starNum = starNum;
 		this.winExperiences = winExperiences;
 	}
 
@@ -272,6 +274,14 @@ public abstract class AbstractStarInfo implements java.io.Serializable {
 
 	public void setMusicalstyle(String musicalstyle) {
 		this.musicalstyle = musicalstyle;
+	}
+
+	public Integer getStarNum() {
+		return this.starNum;
+	}
+
+	public void setStarNum(Integer starNum) {
+		this.starNum = starNum;
 	}
 
 	public Set getWinExperiences() {

@@ -21,13 +21,13 @@ public class StarInfo extends AbstractStarInfo implements java.io.Serializable {
 			String occupation, String brokerfirm, String animal,
 			String representativeworks, String residence,
 			String gratuateunivercity, String achivements, String nationality,
-			String sex, String specialty, String musicalstyle,
+			String sex, String specialty, String musicalstyle, Integer starNum,
 			Set winExperiences) {
 		super(chineseName, starImg, starDetail, englishName, bieming, nation,
 				constellation, bloodtype, height, weight, birthplace, birthday,
 				occupation, brokerfirm, animal, representativeworks, residence,
 				gratuateunivercity, achivements, nationality, sex, specialty,
-				musicalstyle, winExperiences);
+				musicalstyle, starNum, winExperiences);
 	}
 
 }

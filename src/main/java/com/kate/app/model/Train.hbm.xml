@@ -8,7 +8,7 @@
     <class name="com.kate.app.model.Train" table="train" catalog="media">
         <id name="id" type="java.lang.Integer">
             <column name="id" />
-            <generator class="identity" />
+            <generator class="native" />
         </id>
         <property name="trainName" type="java.lang.String">
             <column name="train_name" />
@@ -18,6 +18,9 @@
         </property>
         <property name="trainImage" type="java.lang.String">
             <column name="train_image" length="65535" />
+        </property>
+        <property name="trainId" type="java.lang.Integer">
+            <column name="train_id" />
         </property>
         <set name="trainDetails" inverse="true">
             <key>

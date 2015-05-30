@@ -10,7 +10,9 @@ public abstract class AbstractStarVedio implements java.io.Serializable {
 	// Fields
 
 	private Integer id;
-	private String vedio;
+	private Integer starNum;
+	private String videoPic;
+	private String videoId;
 
 	// Constructors
 
@@ -19,8 +21,10 @@ public abstract class AbstractStarVedio implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public AbstractStarVedio(String vedio) {
-		this.vedio = vedio;
+	public AbstractStarVedio(Integer starNum, String videoPic, String videoId) {
+		this.starNum = starNum;
+		this.videoPic = videoPic;
+		this.videoId = videoId;
 	}
 
 	// Property accessors
@@ -33,12 +37,28 @@ public abstract class AbstractStarVedio implements java.io.Serializable {
 		this.id = id;
 	}
 
-	public String getVedio() {
-		return this.vedio;
+	public Integer getStarNum() {
+		return this.starNum;
 	}
 
-	public void setVedio(String vedio) {
-		this.vedio = vedio;
+	public void setStarNum(Integer starNum) {
+		this.starNum = starNum;
+	}
+
+	public String getVideoPic() {
+		return this.videoPic;
+	}
+
+	public void setVideoPic(String videoPic) {
+		this.videoPic = videoPic;
+	}
+
+	public String getVideoId() {
+		return this.videoId;
+	}
+
+	public void setVideoId(String videoId) {
+		this.videoId = videoId;
 	}
 
 }

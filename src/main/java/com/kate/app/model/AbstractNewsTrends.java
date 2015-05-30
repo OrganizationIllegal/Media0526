@@ -16,6 +16,7 @@ public abstract class AbstractNewsTrends implements java.io.Serializable {
 	private Date time;
 	private String detail;
 	private String image;
+	private Integer newsId;
 
 	// Constructors
 
@@ -25,11 +26,12 @@ public abstract class AbstractNewsTrends implements java.io.Serializable {
 
 	/** full constructor */
 	public AbstractNewsTrends(String title, Date time, String detail,
-			String image) {
+			String image, Integer newsId) {
 		this.title = title;
 		this.time = time;
 		this.detail = detail;
 		this.image = image;
+		this.newsId = newsId;
 	}
 
 	// Property accessors
@@ -72,6 +74,14 @@ public abstract class AbstractNewsTrends implements java.io.Serializable {
 
 	public void setImage(String image) {
 		this.image = image;
+	}
+
+	public Integer getNewsId() {
+		return this.newsId;
+	}
+
+	public void setNewsId(Integer newsId) {
+		this.newsId = newsId;
 	}
 
 }

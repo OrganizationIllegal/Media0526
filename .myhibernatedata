@@ -1,5 +1,5 @@
 #MyEclipse Hibernate Properties
-#Tue May 26 14:23:31 CST 2015
+#Sat May 30 17:27:50 CST 2015
 sessionFactoryName=com.kate.app.model.HibernateSessionFactory
 genBasicCompId=true
 profile=
@@ -11,14 +11,14 @@ reStrategyClass=
 detectO2O=true
 springDaoFile=
 useJavaTypes=true
-keyGenerator=
+keyGenerator=native
 libInstallFolder=<no jars/zips in selected libraries>
 addLibs2Project=true
 genVersionTag=true
 sessionFactoryId=
 basePersistenceClass=
 genAnnotations=false
-reSettingsFile=
+reSettingsFile=/HouseSale Maven Webapp/hibernate.reveng.xml
 configFile=/21Media/src/main/java/hibernate.cfg.xml
 createConfigFile=true
 addLibs2Classpath=true

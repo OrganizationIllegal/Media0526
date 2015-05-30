@@ -8,29 +8,28 @@ import org.hibernate.criterion.Example;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.kate.app.model.StarImage;
+import com.kate.app.model.RecommendVideo;
 
 /**
  * A data access object (DAO) providing persistence and search support for
- * StarImage entities. Transaction control of the save(), update() and delete()
- * operations can directly support Spring container-managed transactions or they
- * can be augmented to handle user-managed Spring transactions. Each of these
- * methods provides additional information for how to configure it for the
- * desired type of transaction control.
+ * RecommendVideo entities. Transaction control of the save(), update() and
+ * delete() operations can directly support Spring container-managed
+ * transactions or they can be augmented to handle user-managed Spring
+ * transactions. Each of these methods provides additional information for how
+ * to configure it for the desired type of transaction control.
  * 
- * @see com.kate.app.model.StarImage
+ * @see com.kate.app.model.RecommendVideo
  * @author MyEclipse Persistence Tools
  */
 
-public class StarImageDAO extends BaseHibernateDAO {
+public class RecommendVideoDAO extends BaseHibernateDAO {
 	private static final Logger log = LoggerFactory
-			.getLogger(StarImageDAO.class);
-	// property constants
-	public static final String IMG = "img";
-	public static final String STAR_NUM = "starNum";
+			.getLogger(RecommendVideoDAO.class);
 
-	public void save(StarImage transientInstance) {
-		log.debug("saving StarImage instance");
+	// property constants
+
+	public void save(RecommendVideo transientInstance) {
+		log.debug("saving RecommendVideo instance");
 		try {
 			getSession().save(transientInstance);
 			log.debug("save successful");
@@ -40,8 +39,8 @@ public class StarImageDAO extends BaseHibernateDAO {
 		}
 	}
 
-	public void delete(StarImage persistentInstance) {
-		log.debug("deleting StarImage instance");
+	public void delete(RecommendVideo persistentInstance) {
+		log.debug("deleting RecommendVideo instance");
 		try {
 			getSession().delete(persistentInstance);
 			log.debug("delete successful");
@@ -51,11 +50,11 @@ public class StarImageDAO extends BaseHibernateDAO {
 		}
 	}
 
-	public StarImage findById(java.lang.Integer id) {
-		log.debug("getting StarImage instance with id: " + id);
+	public RecommendVideo findById(com.kate.app.model.RecommendVideoId id) {
+		log.debug("getting RecommendVideo instance with id: " + id);
 		try {
-			StarImage instance = (StarImage) getSession().get(
-					"com.kate.app.model.StarImage", id);
+			RecommendVideo instance = (RecommendVideo) getSession().get(
+					"com.kate.app.model.RecommendVideo", id);
 			return instance;
 		} catch (RuntimeException re) {
 			log.error("get failed", re);
@@ -63,11 +62,11 @@ public class StarImageDAO extends BaseHibernateDAO {
 		}
 	}
 
-	public List findByExample(StarImage instance) {
-		log.debug("finding StarImage instance by example");
+	public List findByExample(RecommendVideo instance) {
+		log.debug("finding RecommendVideo instance by example");
 		try {
 			List results = getSession()
-					.createCriteria("com.kate.app.model.StarImage")
+					.createCriteria("com.kate.app.model.RecommendVideo")
 					.add(Example.create(instance)).list();
 			log.debug("find by example successful, result size: "
 					+ results.size());
@@ -79,10 +78,10 @@ public class StarImageDAO extends BaseHibernateDAO {
 	}
 
 	public List findByProperty(String propertyName, Object value) {
-		log.debug("finding StarImage instance with property: " + propertyName
-				+ ", value: " + value);
+		log.debug("finding RecommendVideo instance with property: "
+				+ propertyName + ", value: " + value);
 		try {
-			String queryString = "from StarImage as model where model."
+			String queryString = "from RecommendVideo as model where model."
 					+ propertyName + "= ?";
 			Query queryObject = getSession().createQuery(queryString);
 			queryObject.setParameter(0, value);
@@ -93,18 +92,10 @@ public class StarImageDAO extends BaseHibernateDAO {
 		}
 	}
 
-	public List findByImg(Object img) {
-		return findByProperty(IMG, img);
-	}
-
-	public List findByStarNum(Object starNum) {
-		return findByProperty(STAR_NUM, starNum);
-	}
-
 	public List findAll() {
-		log.debug("finding all StarImage instances");
+		log.debug("finding all RecommendVideo instances");
 		try {
-			String queryString = "from StarImage";
+			String queryString = "from RecommendVideo";
 			Query queryObject = getSession().createQuery(queryString);
 			return queryObject.list();
 		} catch (RuntimeException re) {
@@ -113,10 +104,11 @@ public class StarImageDAO extends BaseHibernateDAO {
 		}
 	}
 
-	public StarImage merge(StarImage detachedInstance) {
-		log.debug("merging StarImage instance");
+	public RecommendVideo merge(RecommendVideo detachedInstance) {
+		log.debug("merging RecommendVideo instance");
 		try {
-			StarImage result = (StarImage) getSession().merge(detachedInstance);
+			RecommendVideo result = (RecommendVideo) getSession().merge(
+					detachedInstance);
 			log.debug("merge successful");
 			return result;
 		} catch (RuntimeException re) {
@@ -125,8 +117,8 @@ public class StarImageDAO extends BaseHibernateDAO {
 		}
 	}
 
-	public void attachDirty(StarImage instance) {
-		log.debug("attaching dirty StarImage instance");
+	public void attachDirty(RecommendVideo instance) {
+		log.debug("attaching dirty RecommendVideo instance");
 		try {
 			getSession().saveOrUpdate(instance);
 			log.debug("attach successful");
@@ -136,8 +128,8 @@ public class StarImageDAO extends BaseHibernateDAO {
 		}
 	}
 
-	public void attachClean(StarImage instance) {
-		log.debug("attaching clean StarImage instance");
+	public void attachClean(RecommendVideo instance) {
+		log.debug("attaching clean RecommendVideo instance");
 		try {
 			getSession().lock(instance, LockMode.NONE);
 			log.debug("attach successful");

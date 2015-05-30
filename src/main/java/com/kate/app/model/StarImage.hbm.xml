@@ -8,10 +8,13 @@
     <class name="com.kate.app.model.StarImage" table="star_image" catalog="media">
         <id name="id" type="java.lang.Integer">
             <column name="id" />
-            <generator class="identity" />
+            <generator class="native" />
         </id>
         <property name="img" type="java.lang.String">
             <column name="img" length="65535" />
+        </property>
+        <property name="starNum" type="java.lang.Integer">
+            <column name="star_num" />
         </property>
     </class>
 </hibernate-mapping>

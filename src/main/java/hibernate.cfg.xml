@@ -18,10 +18,16 @@
 		<property name="connection.driver_class">
 			com.mysql.jdbc.Driver
 		</property>
+		<mapping resource="com/kate/app/model/LunboImage.hbm.xml" />
+		<mapping resource="com/kate/app/model/News.hbm.xml" />
+		<mapping resource="com/kate/app/model/NewsImage.hbm.xml" />
 		<mapping resource="com/kate/app/model/NewsTrends.hbm.xml" />
+		<mapping resource="com/kate/app/model/RecommendTrain.hbm.xml" />
+		<mapping resource="com/kate/app/model/RecommendVideo.hbm.xml" />
 		<mapping resource="com/kate/app/model/StarImage.hbm.xml" />
 		<mapping resource="com/kate/app/model/StarInfo.hbm.xml" />
 		<mapping resource="com/kate/app/model/StarVedio.hbm.xml" />
+		<mapping resource="com/kate/app/model/StarPics.hbm.xml" />
 		<mapping resource="com/kate/app/model/TrainDetail.hbm.xml" />
 		<mapping resource="com/kate/app/model/Train.hbm.xml" />
 		<mapping resource="com/kate/app/model/WinExperience.hbm.xml" />

@@ -1,6 +1,5 @@
 package com.kate.app.model;
 
-
 import java.util.Set;
 
 /**
@@ -16,10 +15,8 @@ public class Train extends AbstractTrain implements java.io.Serializable {
 
 	/** full constructor */
 	public Train(String trainName, String trainDesc, String trainImage,
-			Set trainDetails) {
-		super(trainName, trainDesc, trainImage, trainDetails);
-
+			Integer trainId, Set trainDetails) {
+		super(trainName, trainDesc, trainImage, trainId, trainDetails);
 	}
 
 }
-  

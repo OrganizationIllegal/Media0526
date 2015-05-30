@@ -1,8 +1,5 @@
 package com.kate.app.dao;
 
-import com.kate.app.model.NewsTrends;
-
-import java.util.Date;
 import java.util.List;
 
 import org.hibernate.LockMode;
@@ -10,7 +7,8 @@ import org.hibernate.Query;
 import org.hibernate.criterion.Example;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Repository;
+
+import com.kate.app.model.NewsTrends;
 
 /**
  * A data access object (DAO) providing persistence and search support for
@@ -23,7 +21,7 @@ import org.springframework.stereotype.Repository;
  * @see com.kate.app.model.NewsTrends
  * @author MyEclipse Persistence Tools
  */
-@Repository 
+
 public class NewsTrendsDAO extends BaseHibernateDAO {
 	private static final Logger log = LoggerFactory
 			.getLogger(NewsTrendsDAO.class);
@@ -31,6 +29,7 @@ public class NewsTrendsDAO extends BaseHibernateDAO {
 	public static final String TITLE = "title";
 	public static final String DETAIL = "detail";
 	public static final String IMAGE = "image";
+	public static final String NEWS_ID = "newsId";
 
 	public void save(NewsTrends transientInstance) {
 		log.debug("saving NewsTrends instance");
@@ -106,6 +105,10 @@ public class NewsTrendsDAO extends BaseHibernateDAO {
 
 	public List findByImage(Object image) {
 		return findByProperty(IMAGE, image);
+	}
+
+	public List findByNewsId(Object newsId) {
+		return findByProperty(NEWS_ID, newsId);
 	}
 
 	public List findAll() {

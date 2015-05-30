@@ -1,15 +1,14 @@
 package com.kate.app.dao;
 
-import com.kate.app.model.Train;
-
 import java.util.List;
-import java.util.Set;
+
 import org.hibernate.LockMode;
 import org.hibernate.Query;
 import org.hibernate.criterion.Example;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Repository;
+
+import com.kate.app.model.Train;
 
 /**
  * A data access object (DAO) providing persistence and search support for Train
@@ -22,13 +21,14 @@ import org.springframework.stereotype.Repository;
  * @see com.kate.app.model.Train
  * @author MyEclipse Persistence Tools
  */
-@Repository 
+
 public class TrainDAO extends BaseHibernateDAO {
 	private static final Logger log = LoggerFactory.getLogger(TrainDAO.class);
 	// property constants
 	public static final String TRAIN_NAME = "trainName";
 	public static final String TRAIN_DESC = "trainDesc";
 	public static final String TRAIN_IMAGE = "trainImage";
+	public static final String TRAIN_ID = "trainId";
 
 	public void save(Train transientInstance) {
 		log.debug("saving Train instance");
@@ -104,6 +104,10 @@ public class TrainDAO extends BaseHibernateDAO {
 
 	public List findByTrainImage(Object trainImage) {
 		return findByProperty(TRAIN_IMAGE, trainImage);
+	}
+
+	public List findByTrainId(Object trainId) {
+		return findByProperty(TRAIN_ID, trainId);
 	}
 
 	public List findAll() {

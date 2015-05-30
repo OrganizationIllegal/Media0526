@@ -15,8 +15,9 @@ public class NewsTrends extends AbstractNewsTrends implements
 	}
 
 	/** full constructor */
-	public NewsTrends(String title, Date time, String detail, String image) {
-		super(title, time, detail, image);
+	public NewsTrends(String title, Date time, String detail, String image,
+			Integer newsId) {
+		super(title, time, detail, image, newsId);
 	}
 
 }
