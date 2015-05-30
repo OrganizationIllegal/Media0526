@@ -19,7 +19,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div style="color:white;font-size:10px;font-family:楷体;">EVENT</div>
 			</div>
             <div class="col-md-1" style="padding-left:10px;padding-right:0px;border-color:white;border-right-style:solid;border-right-width:1px;padding-top:5px;padding-bottom:5px;">
-				<div style="padding-left:10px;margin-bottom:10px;"><a href="#" style="color:white;font-size:20px;font-family:楷体;">动态</a></div>
+				<div style="padding-left:10px;margin-bottom:10px;"><a href="/news.jsp" style="color:white;font-size:20px;font-family:楷体;">动态</a></div>
 				<div style="color:white;font-size:10px;font-family:楷体;">WEDDING</div>
 				<div style="color:white;font-size:10px;font-family:楷体;">PHOTO</div>
 				<div style="color:white;font-size:10px;font-family:楷体;">GUESTPHOTO</div>
@@ -35,13 +35,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div style="color:white;font-size:10px;font-family:楷体;">SERVICE TIPS</div>
 			</div>
 			<div class="col-md-1" style="padding-left:10px;padding-right:0px;border-color:white;border-right-style:solid;border-right-width:1px;padding-top:5px;padding-bottom:5px;">
-				<div style="padding-left:10px;margin-bottom:10px;"><a href="#" style="color:white;font-size:20px;font-family:楷体;">影视</a></div>
+				<div style="padding-left:10px;margin-bottom:10px;"><a href="/video.jsp" style="color:white;font-size:20px;font-family:楷体;">影视</a></div>
 				<div style="color:white;font-size:10px;font-family:楷体;">CONTACT</div>
 				<div style="color:white;font-size:10px;font-family:楷体;">WEIBO</div>
 				<div style="color:white;font-size:10px;font-family:楷体;">WEIXIN</div>
 			</div>
 			<div class="col-md-2" style="padding-left:10px;padding-right:0px;border-color:white;border-right-style:solid;border-right-width:1px;padding-top:5px;padding-bottom:5px;">
-				<div style="padding-left:10px;margin-bottom:10px;"><a href="#" style="color:white;font-size:20px;font-family:楷体;">联系我们</a></div>
+				<div style="padding-left:10px;margin-bottom:10px;"><a href="/aboutus.jsp" style="color:white;font-size:20px;font-family:楷体;">联系我们</a></div>
 				<div style="color:white;font-size:10px;font-family:楷体;">ABOUT US</div>
 				<div style="color:white;font-size:10px;font-family:楷体;">JOB</div>
 				<div style="color:white;font-size:10px;font-family:楷体;">SERVICE TIPS</div>

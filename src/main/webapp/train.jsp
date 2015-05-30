@@ -7,7 +7,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-   <title>index</title>
+   <title>TRAIN</title>
    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
    <script src="/js/jquery.min.js"></script>
    <script src="/bootstrap/js/bootstrap.min.js"></script>
@@ -138,7 +138,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<div style="font-size:120px;font-weight:bolder;color:#7f7979;position:absolute;z-index:1;left:90%;">3</div>
 
 		</div>
-		<jsp:include page="foot.jsp" />
+		<jsp:include page="foot2.jsp" />
 </div>
 </body>
 </html>
