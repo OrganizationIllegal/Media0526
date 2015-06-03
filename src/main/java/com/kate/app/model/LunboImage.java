@@ -3,18 +3,20 @@ package com.kate.app.model;
 /**
  * LunboImage entity. @author MyEclipse Persistence Tools
  */
-public class LunboImage extends AbstractLunboImage implements
-		java.io.Serializable {
-
-	// Constructors
-
-	/** default constructor */
-	public LunboImage() {
+public class LunboImage{
+	private int id;
+	private String img;
+	public int getId() {
+		return id;
 	}
-
-	/** full constructor */
-	public LunboImage(String img) {
-		super(img);
+	public void setId(int id) {
+		this.id = id;
 	}
-
+	public String getImg() {
+		return img;
+	}
+	public void setImg(String img) {
+		this.img = img;
+	}
+	
 }
