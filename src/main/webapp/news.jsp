@@ -50,7 +50,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</div>
 		<div class="col-md-9" style="padding-left:0px;">
 		<div id="news1" style="border-left:1px solid;">
-		<div style="text-align:center;font-size:20px;font-weight:bolder;">满文军亮相音乐盛典 荣膺两项重量级大奖</div>
+		<div style="text-align:center;font-size:20px;font-weight:bolder;">${newsInfo.news_title}</div>
 		<div style="text-align:right;filter:alpha(opacity=60);opacity:0.6;border-bottom:1px solid">2015年05月29日</div>
 		<!-- 轮播图 -->
 		<div style="margin-top:30px;margin-left:100px;margin-right:100px;">

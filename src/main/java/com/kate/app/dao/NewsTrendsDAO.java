@@ -1,5 +1,6 @@
 package com.kate.app.dao;
 
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
@@ -41,4 +42,30 @@ public class NewsTrendsDAO extends BaseDao {
     }
 		return list;
 	}
+	
+	public List<NewsTrends> findByNewsTrendId(int newsId){
+		List<NewsTrends> list = new ArrayList<NewsTrends>();
+		try{
+			
+			String sql = " select * from news_trends where news_id=?";
+			PreparedStatement pstmt = con.prepareStatement(sql);
+			pstmt.setInt(1, newsId);
+			ResultSet rs = pstmt.executeQuery();
+			while(rs.next()){					
+				NewsTrends data = new NewsTrends();
+				data.setId(rs.getInt("id"));
+				data.setDetail(rs.getString("detail"));
+				data.setImage(rs.getString("image"));
+				data.setTime(rs.getDate("time"));
+				data.setTitle(rs.getString("title"));
+				list.add(data);
+			}
+			
+		}catch (Exception e) {
+	        
+	    }
+			return list;
+		}
+	
+	
 }
