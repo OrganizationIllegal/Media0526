@@ -1,5 +1,6 @@
 package com.kate.app.dao;
 
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
@@ -18,20 +19,23 @@ import com.kate.app.model.TrainDetail;
 
 @Repository 
 public class TrainDetailDAO extends BaseDao {
-	public List<News> findAll(){
-	List<News> list = new ArrayList<News>();
+	public List<TrainDetail> findByTrainId(int trainId){
+	List<TrainDetail> list = new ArrayList<TrainDetail>();
 	try{
 		
-		String sql = " select * from News";
-        Statement stmt = con.createStatement();
-		ResultSet rs = stmt.executeQuery(sql);
+		String sql = " select * from train_detail where train_id=?";
+		PreparedStatement pstmt = con.prepareStatement(sql);
+		pstmt.setInt(1, trainId);
+		ResultSet rs = pstmt.executeQuery();
+		
 		while(rs.next()){					
-			News data = new News();
+			TrainDetail data = new TrainDetail();
 			data.setId(rs.getInt("id"));
-			data.setNews_detail(rs.getString("news_detail"));
-			data.setNews_id(rs.getInt("news_id"));
-			data.setNews_time(rs.getDate("news_time"));
-			data.setNews_title(rs.getString("news_title"));
+			data.setDetail(rs.getString("detail"));
+			data.setTitle(rs.getString("title"));
+			data.setTime(rs.getDate("time"));
+			data.setTrain_img(rs.getString("train_img"));
+			
 			list.add(data);
 		}
 		

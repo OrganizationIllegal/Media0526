@@ -49,7 +49,7 @@ public class NewsController {
 			news_id = Integer.parseInt(newsId);
 		}
 		News newsInfo = newsDAO.findByNewId(news_id);
-		List<NewsTrends> trendList = newsTrendsDAO.findByNewsTrendId(news_id);
+		List<NewsTrends> trendList = newsTrendsDAO.findAll();
 		List<NewsImage> imageList = newsImageDAO.findByNewsImgId(news_id);
 		
 		req.setAttribute("newsInfo", newsInfo);

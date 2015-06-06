@@ -7,6 +7,13 @@ import java.util.Set;
  */
 public class StarInfo{
 	private int id;
+	private String birthplace;
+	public String getBirthplace() {
+		return birthplace;
+	}
+	public void setBirthplace(String birthplace) {
+		this.birthplace = birthplace;
+	}
 	private String chinese_name;
 	private String star_img;
 	private String star_detail;

@@ -36,6 +36,7 @@ public class StarInfoDAO extends BaseDao {
 			data.setId(rs.getInt("id"));
 			data.setMusicalstyle(rs.getString("musicalstyle"));
 			data.setNation(rs.getString("nation"));
+			data.setBirthplace(rs.getString("birthplace"));
 			data.setNationality(rs.getString("nationality"));
 			data.setOccupation(rs.getString("occupation"));
 			data.setRepresentativeworks(rs.getString("representativeworks"));

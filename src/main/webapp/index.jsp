@@ -145,25 +145,29 @@ function pop4(){
 
 				<div class="topnews" style="width:568px;border:0px;">
 					<div class="topnewspic" id="hotsearchlist" style="filter:progid:DXImageTransform.Microsoft.GradientWipe(GradientSize=0.25,wipestyle=0,motion=forward)">
-						<div id="switch_0"><a href="http://www.17sucai.com/" target="_blank"><img width="314" height="143" alt="信宣传新专辑 与徐静蕾合作很紧张" src="/images/01.jpg" /></a></div>
-						<div id="switch_1"><a href="http://www.17sucai.com/" target="_blank"><img width="314" height="143" alt="蒲巴甲北京录新歌 首张EP杀青在即" src="/images/02.jpg" /></a></div>
-						<div id="switch_2"><a href="http://www.17sucai.com/" target="_blank"><img width="314" height="143" alt="尚雯婕为演唱会携天价古董拍海报" src="/images/03.jpg" /></a></div>
-						<div id="switch_3"><a href="http://www.17sucai.com/" target="_blank"><img width="314" height="143" alt="格穿透明装与辣妹热舞　爸妈齐助阵" src="/images/04.jpg" /></a></div>
-						<div id="switch_4"><a href="http://www.17sucai.com/" target="_blank"><img width="314" height="143" alt="周杰伦女友江语晨拍MV 邀小朋友助阵" src="/images/05.jpg" /></a></div>
-						<div id="switch_5"><a href="http://www.17sucai.com/" target="_blank"><img width="314" height="143" alt="阿朵唱功遭质疑 撩裙露臀卖肉博眼球" src="/images/06.jpg" /></a></div>
-						<div id="switch_6"><a href="http://www.17sucai.com/" target="_blank"><img width="314" height="143" alt="林俊杰MV中惨遭意外车祸痛失女友" src="/images/07.jpg" /></a></div>
+					<c:forEach var="item" items="${NewsList}" varStatus="stat">
+						<div id="switch_${stat.index }"><a href="/News?newsId=${item.news_id}" target="_blank"><img width="314" height="143" alt="${item.title }" src="${item.image }" /></a></div>
+					</c:forEach>
+						
+						
 					</div>
 				
 					<div class="topnewslist">
 						<img src="/images/jrjd.jpg" width="253" height="25" alt="今日焦点" />
 						<ul>
-							<li><a class="up" id="focus_0" onmouseover="show_focus_image(0);" href="http://www.17sucai.com/" target="_blank">信宣传新专辑 与徐静蕾合作很紧张</a></li>
-							<li><a id="focus_1" onmouseover="show_focus_image(1);" href="http://www.17sucai.com/" target="_blank">蒲巴甲北京录新歌 首张EP杀青在即</a> </li>
-							<li><a id="focus_2" onmouseover="show_focus_image(2);" href="http://www.17sucai.com/" target="_blank">尚雯婕为演唱会携天价古董拍海报</a> </li>
-							<li><a id="focus_3" onmouseover="show_focus_image(3);" href="http://www.17sucai.com/" target="_blank">曹格穿透明装与辣妹热舞　爸妈齐助阵</a></li>
-							<li><a id="focus_4" onmouseover="show_focus_image(4);" href="http://www.17sucai.com/" target="_blank">周杰伦女友江语晨拍MV 邀小朋友助阵</a> </li>
-							<li><a id="focus_5" onmouseover="show_focus_image(5);" href="http://www.17sucai.com/" target="_blank">阿朵唱功遭质疑 撩裙露臀卖肉博眼球</a> </li>
-							<li><a id="focus_6" onmouseover="show_focus_image(6);" href="http://www.17sucai.com/" target="_blank">林俊杰MV中惨遭意外车祸痛失女友</a> </li>
+						<c:forEach var="item" items="${NewsList}" varStatus="stat">
+						<c:choose>
+							<c:when test="${stat.index==0 }">
+								<li><a class="up" id="focus_${stat.index }" onmouseover="show_focus_image(${stat.index });" href="/News?newsId=${item.news_id}" target="_blank">${item.title }</a></li>
+							</c:when>
+							<c:otherwise>
+							<li><a class="up" id="focus_${stat.index }" onmouseover="show_focus_image(${stat.index });" href="/News?newsId=${item.news_id}" target="_blank">${item.title }</a></li>
+							</c:otherwise>
+						</c:choose>
+							
+						
+					</c:forEach>
+							
 						</ul>
 					</div>
 				</div>
