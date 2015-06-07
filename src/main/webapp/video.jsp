@@ -50,7 +50,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
  <div class="container">
  <jsp:include page="head.jsp" />
- 	<div class="row" style="padding-top:10px">
+ 	<div class="row">
  	     <!--左侧视频播放start-->
  		<div class="col-md-8 col-lg-8" >
  				<div id="youkuplayer" style="width:795px;height:600px">
@@ -74,7 +74,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
  		</div>
  		<!--右侧图片列表end-->
  	</div>
- 	<jsp:include page="foot.jsp" />
+ 	<jsp:include page="foot2.jsp" />
  </div>
 </body>
 </html>

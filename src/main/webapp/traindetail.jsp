@@ -67,7 +67,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<div style="text-align:center;"><img src="/images/traindetail/t1.PNG"></div>
 		<div style="overflow-y:auto; width:910px; height:380px;margin-top:10px;"><img alt="公司简介" src="/images/traindetail/t2.PNG" style="width:880px;"></div>
 		</div>
-		<div id="train2">
+		<div id="train2" style="display:none;">
 		<div style="text-align:center;"><img src="/images/traindetail/t1.PNG"></div>
 		<div style="overflow-y:auto; width:910px; height:380px;margin-top:10px;"><img alt="公司简介" src="/images/traindetail/t2.PNG" style="width:880px;"></div>
 		</div>
