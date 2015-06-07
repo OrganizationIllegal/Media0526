@@ -20,7 +20,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     ctx.scale(1,1.1);
     ctx.fillStyle="#1c4587";  
     ctx.arc(75,78,75,0,Math.PI*2); // context.arc(x,y,r,sAngle,eAngle,counterclockwise)
-    ctx.fill();　　　　　　//使用ctx.fill();就是填充色；          　　　　　                  
+    ctx.fill();
 })
     $(function(){
     var can = document.getElementById("can2");
@@ -29,7 +29,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     ctx.lineWidth = "3";
     ctx.strokeStyle="#3c78d8";  
     ctx.arc(25,25,20,0,Math.PI*2); // context.arc(x,y,r,sAngle,eAngle,counterclockwise)
-    ctx.stroke();　　　　　　//使用ctx.fill();就是填充色；          　　　　　                  
+    ctx.stroke();
 })
      $(function(){
     var can = document.getElementById("can3");
@@ -38,7 +38,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     ctx.lineWidth = "3";
     ctx.strokeStyle="#3c78d8";  
     ctx.arc(25,25,20,0,Math.PI*2); // context.arc(x,y,r,sAngle,eAngle,counterclockwise)
-    ctx.stroke();　　　　　　//使用ctx.fill();就是填充色；          　　　　　                  
+    ctx.stroke();
 })
       $(function(){
     var can = document.getElementById("can4");
@@ -47,7 +47,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     ctx.lineWidth = "3";
     ctx.strokeStyle="#5b0f00";  
     ctx.arc(25,25,20,0,Math.PI*2); // context.arc(x,y,r,sAngle,eAngle,counterclockwise)
-    ctx.stroke();　　　　　　//使用ctx.fill();就是填充色；          　　　　　                  
+    ctx.stroke();
 })
       $(function(){
     var can = document.getElementById("can5");
@@ -55,7 +55,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     ctx.beginPath(); 
     ctx.fillStyle="rgba(28, 69, 134, 0.5)"; 
     ctx.arc(75,75,70,0,Math.PI*2); // context.arc(x,y,r,sAngle,eAngle,counterclockwise)
-    ctx.fill();　　　　　　//使用ctx.fill();就是填充色；          　　　　　                  
+    ctx.fill();
 })
         $(function(){
     var can = document.getElementById("can6");
@@ -64,7 +64,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     ctx.scale(2,1);
     ctx.fillStyle="rgba(28, 69, 134, 0.5)"; 
     ctx.arc(50,50,50,0,Math.PI*2); // context.arc(x,y,r,sAngle,eAngle,counterclockwise)
-    ctx.fill();　　　　　　//使用ctx.fill();就是填充色；          　　　　　                  
+    ctx.fill();
 })
    </script>
    <!-- 绘制圆形 end -->
@@ -89,14 +89,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			
 		</div>
 		<div class="row" style="margin-top:40px;">
-		  <c:forEach items="${TrainList}"  var="item">
-			<div class="col-md-4"><img src="${item.trainImage}" width="350px" height="280px">
+		  <c:forEach items="${trainList}"  var="item">
+			<div class="col-md-4"><img src="${item.train_image}" width="350px" height="280px">
 			<div style="z-index:1;width:350px;height:100px;opacity:0.5;background:#1c4587;top:90px;position:absolute;filter:alpha(opacity=50);">
 					<div style="height:100%;line-height:100%;overflow:hidden;align:center;">
-						<h1 style="text-align:center;color:white;">${item.trainName}</h1>
+						<h1 style="text-align:center;color:white;">${item.train_name}</h1>
 					</div>
 			</div>
-			<div>${item.trainDesc}</div>
+			<div>${item.train_desc}</div>
 		   </div>
 		   </c:forEach>
 		</div>
@@ -105,7 +105,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div style="font-size:30px;font-weight:bolder;font-family:黑体;">兴趣班</div>
 				<div style="font-size:25px;font-weight:bolder;color:#7f7979;">INTEREST&nbsp;CLASS</div>
 				<hr style="height:1px;border:none;border-top:3px solid #555555;width: 40%;margin-left: 0px;margin-top: 0px;margin-bottom:10px;" />
-				<c:forEach items="${TrainDetail1}"  var="item">
+				<c:forEach items="${xingqubanList}"  var="item">
 				<div style="background-color:#7f7979;color:white;width:25%;font-size；20px;">${item.time}</div>
 				<div style="font-size:20px;font-weight:bolder;font-family:黑体;">${item.title}</div>
 				<div>${item.detail}</div>
@@ -116,9 +116,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div style="font-size:30px;font-weight:bolder;font-family:黑体;"><a href="/traindetail.jsp">练习生</a></div>
 				<div style="font-size:25px;font-weight:bolder;color:#7f7979;">TRAINEE</div>
 				<hr style="height:1px;border:none;border-top:3px solid #555555;width: 40%;margin-left: 0px;margin-top: 0px;margin-bottom:10px;" />
-				<c:forEach items="${TrainDetail2}"  var="item">
+				<c:forEach items="${lianxishengList}"  var="item">
 				<div class="row" style="margin-top:20px;">
-					<div class="col-md-6" style="padding-right:0px;"><img src="${item.trainImg}" width="140px;" height="100px;"></div>
+					<div class="col-md-6" style="padding-right:0px;"><img src="${item.train_img}" width="140px;" height="100px;"></div>
 					<div class="col-md-6" style="padding-left:0px;"><div style="font-size:18px;font-weight:bolder;">${item.title}</div>
 					<div>${item.detail}</div>
 				</div>
@@ -130,8 +130,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div style="font-size:30px;font-weight:bolder;font-family:黑体;">国际班</div>
 				<div style="font-size:25px;font-weight:bolder;color:#7f7979;">INTERNATIONAL&nbsp;CLASS</div>
 				<hr style="height:1px;border:none;border-top:3px solid #555555;width: 40%;margin-left: 0px;margin-top: 0px;margin-bottom:10px;" />
-				<c:forEach items="${TrainDetail3}"  var="item">
-				<div><img src="${item.trainImg}" width="320px" height="200px"></div>
+				<c:forEach items="${guojibanList}"  var="item">
+				<div><img src="${item.train_img}" width="320px" height="200px"></div>
 				<div>${item.detail}</div>
 				</c:forEach>
 			</div>

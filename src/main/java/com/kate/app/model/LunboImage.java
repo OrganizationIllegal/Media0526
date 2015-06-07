@@ -1,12 +1,11 @@
 package com.kate.app.model;
 
 /**
- * StarImage entity. @author MyEclipse Persistence Tools
+ * LunboImage entity. @author MyEclipse Persistence Tools
  */
-public class StarImage{
+public class LunboImage{
 	private int id;
 	private String img;
-	private int star_num;
 	public int getId() {
 		return id;
 	}
@@ -18,12 +17,6 @@ public class StarImage{
 	}
 	public void setImg(String img) {
 		this.img = img;
-	}
-	public int getStar_num() {
-		return star_num;
-	}
-	public void setStar_num(int star_num) {
-		this.star_num = star_num;
 	}
 	
 }

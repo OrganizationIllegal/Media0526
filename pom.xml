@@ -6,7 +6,7 @@
   <artifactId>29Media</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
-  <name>HouseSale Maven Webapp</name>
+  <name>29Media</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>

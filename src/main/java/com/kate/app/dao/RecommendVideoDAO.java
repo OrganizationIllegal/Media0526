@@ -12,23 +12,25 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
 
-import com.kate.app.model.NewsTrends;
-import com.kate.app.model.StarImage;
+import com.kate.app.model.News;
+import com.kate.app.model.RecommendVideo;
 
 @Repository 
-public class StarImageDAO extends BaseDao {
-	public List<StarImage> findAll(){
-	List<StarImage> list = new ArrayList<StarImage>();
+public class RecommendVideoDAO extends BaseDao {
+	public List<News> findAll(){
+	List<News> list = new ArrayList<News>();
 	try{
 		
-		String sql = " select * from star_image";
+		String sql = " select * from News";
         Statement stmt = con.createStatement();
 		ResultSet rs = stmt.executeQuery(sql);
 		while(rs.next()){					
-			StarImage data = new StarImage();
+			News data = new News();
 			data.setId(rs.getInt("id"));
-			data.setImg(rs.getString("img"));
-			data.setStar_num(rs.getInt("star_num"));
+			data.setNews_detail(rs.getString("news_detail"));
+			data.setNews_id(rs.getInt("news_id"));
+			data.setNews_time(rs.getDate("news_time"));
+			data.setNews_title(rs.getString("news_title"));
 			list.add(data);
 		}
 		
