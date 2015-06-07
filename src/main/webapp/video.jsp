@@ -15,6 +15,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
    <link href="/css/news.css" rel="stylesheet">
    <script src="/js/jquery.min.js"></script>
    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <style type="text/css">
+   body{
+   background-color:rgba(233, 243, 248, 1);
+   }
+   </style>
    <script type="text/javascript" src="http://player.youku.com/jsapi">
 		
 		player = new YKU.Player('youkuplayer',{

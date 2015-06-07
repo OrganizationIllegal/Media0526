@@ -7,7 +7,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <body>
-<div class="row" style="background-color:rgba(121, 200, 225, 1);padding-top:20px;padding-bottom:10px;">
+<div class="row" style="background-color:#cccccc;padding-top:20px;padding-bottom:10px;">
 			<div class="col-md-2"></div>
 			<div class="col-md-8">
 				<div style="text-align:center;font-size:16px;margin-bottom:10px;">版权所有(C)2014-2015&nbsp;三亚原野原野原野原野09003796号&nbsp;技术支持：品色创意设计&nbsp;手机版客户端</div>

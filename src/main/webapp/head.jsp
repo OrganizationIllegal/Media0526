@@ -8,9 +8,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
 <body>
  <!-- header start -->
-		<div class="row" style="padding-top:30px;background-color:rgba(121, 200, 225, 1);margin-left: 0px;margin-right: 0px;">
+		<div class="row" style="padding-top:30px;background-color:#cccccc;margin-left: 0px;margin-right: 0px;">
 			<div class="col-md-3 col-md-offset-1">
-				<img alt="logo"  src="/images/logo.PNG">
+				<!-- <img alt="logo"  src="/images/logo.PNG"> -->
 			</div>
 			<div class="col-md-1"></div>
 			<div class="col-md-1" style="padding-left:0px;padding-right:0px;border-color:white;border-right-style:solid;border-right-width:1px;padding-top:5px;padding-bottom:22px;">

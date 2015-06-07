@@ -13,6 +13,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
    <link href="/css/news.css" rel="stylesheet">
    <script src="/js/jquery.min.js"></script>
    <script src="/bootstrap/js/bootstrap.min.js"></script>
+   <style type="text/css">
+   body{
+   background-color:rgba(233, 243, 248, 1);
+   }
+   </style>
     <!-- 绘制圆形 -->
    <script type="text/javascript">
    $(function(){
@@ -221,17 +226,14 @@ function pop4(){
 			</div>
 			<div class="col-md-6">
 				<div class="row">
-					<div class="col-md-4">
+					<%-- <div class="col-md-4">
 						<div style="position:absolute;Z-index:-1"><canvas id="can1" width="150" height="150" ></canvas></div>
                         <div ><img src="/images/shipin.png" style="width:150px;" onclick="pop1()"/></div>
-					</div>
+					</div> --%>
+					<div class="col-md-4" style="margin-top:15px;"><canvas id="can1" width="150" height="150" onclick="pop1()"></canvas></div>
 					<div class="col-md-2" style="margin-top:120px;"><canvas id="can2" width="80" height="80" onclick="pop2()"></canvas></div>
 					<div class="col-md-2" style="margin-top:20px;"><canvas id="can3" width="80" height="80" onclick="pop3()"></canvas></div>
 					<div class="col-md-4" style="margin-top:50px;"><canvas id="can4" width="150" height="150" onclick="pop4()"></canvas></div>
-					<!-- <div class="col-md-4"><img src="./image/img01.jpg" style="width:130px;" onclick="pop1()"/></div>
-					<div class="col-md-2" style="margin-top:120px;"><img src="./image/img02.jpg" style="width:70px;" onclick="pop2()"/></div>
-					<div class="col-md-2" style="margin-top:20px;"><img src="./image/img04.jpg" style="width:70px;" onclick="pop3()"/></div>
-					<div class="col-md-4" style="margin-top:50px;"><img src="./image/img05.jpg" style="width:130px;" onclick="pop4()"/></div> -->
 				</div>
 			</div>
 		</div>
