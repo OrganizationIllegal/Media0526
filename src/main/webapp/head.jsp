@@ -6,9 +6,23 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+<head>
+ <style type="text/css">
+   body{
+   /* background-color:rgba(233, 243, 248, 1); */
+    background: -moz-linear-gradient(top, #000000 0%, #ffffff 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(100%,#ffffff));
+    background: -webkit-linear-gradient(top, #000000 0%,#ffffff 100%);
+    background: -o-linear-gradient(top, #000000 0%,#ffffff 100%);
+    background: -ms-linear-gradient(top, #000000 0%,#ffffff 100%);
+    background: linear-gradient(to bottom, #000000 0%,#ffffff 100%);
+ 
+   }
+   </style>
+</head>
 <body>
  <!-- header start -->
-		<div class="row" style="padding-top:30px;background-color:#cccccc;margin-left: 0px;margin-right: 0px;">
+		<div class="row" style="padding-top:30px;/* background-color:#000000; */margin-left: 0px;margin-right: 0px;">
 			<div class="col-md-3 col-md-offset-1">
 				<!-- <img alt="logo"  src="/images/logo.PNG"> -->
 			</div>
@@ -42,7 +56,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div style="color:white;font-size:10px;font-family:楷体;">WEIBO</div>
 				<div style="color:white;font-size:10px;font-family:楷体;">WEIXIN</div>
 			</div>
-			<div class="col-md-2" style="padding-left:10px;padding-right:0px;border-color:white;border-right-style:solid;border-right-width:1px;padding-top:5px;padding-bottom:5px;">
+			<div class="col-md-2" style="padding-left:10px;padding-right:0px;padding-top:5px;padding-bottom:5px;">
 				<div style="padding-left:10px;margin-bottom:10px;"><a href="/aboutus.jsp" style="color:white;font-size:20px;font-family:楷体;">联系我们</a></div>
 				<div style="color:white;font-size:10px;font-family:楷体;">ABOUT US</div>
 				<div style="color:white;font-size:10px;font-family:楷体;">JOB</div>

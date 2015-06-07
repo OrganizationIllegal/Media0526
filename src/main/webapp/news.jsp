@@ -11,11 +11,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
    <script src="/js/jquery.min.js"></script>
    <script src="/bootstrap/js/bootstrap.min.js"></script>
-   <style type="text/css">
-   body{
-   background-color:rgba(233, 243, 248, 1);
-   }
-   </style>
+   
    <script type="text/javascript">
    $(function(){
 	   $("#id1").mouseover(function(){
@@ -46,7 +42,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<jsp:include page="head.jsp" />
 		<div class="row" style="margin-top:50px;">
 		<div class="col-md-3" style="padding-right:0px;">
-		<div style="text-align:center;font-size:20px;font-weight:bolder;padding-bottom:20px;border-bottom:1px solid">NEWS TREND</div>
+		<div style="text-align:center;font-size:20px;font-weight:bolder;padding-bottom:20px;border-bottom:1px solid;color:white;">NEWS TREND</div>
 		<!-- 新闻目录 -->
 		<c:forEach var="item" items="${trendList }" varStatus="stat">
 			<div style="margin-top:20px;margin-left:20px;font-weight:bold;filter:alpha(opacity=60);opacity:0.6;">${item.time}</div>
@@ -57,8 +53,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</div>
 		<div class="col-md-9" style="padding-left:0px;">
 		<div id="news1" style="border-left:1px solid;">
-		<div style="text-align:center;font-size:20px;font-weight:bolder;">${newsInfo.news_title}</div>
-		<div style="text-align:right;filter:alpha(opacity=60);opacity:0.6;border-bottom:1px solid">${newsInfo.news_time}</div>
+		<div style="text-align:center;font-size:20px;font-weight:bolder;color:white;">${newsInfo.news_title}</div>
+		<div style="text-align:right;filter:alpha(opacity=60);opacity:0.6;border-bottom:1px solid;color:white;">${newsInfo.news_time}</div>
 		<!-- 轮播图 -->
 		<div style="margin-top:30px;margin-left:100px;margin-right:100px;">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">

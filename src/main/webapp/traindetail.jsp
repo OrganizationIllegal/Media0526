@@ -56,10 +56,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <body>
 <div class="container">
 		<jsp:include page="head.jsp" />
-		<div class="row">
+		<div class="row" style="color:white;">
 		<div class="col-md-2" style="padding-right:0px;padding-top:50px;">
 		<div style="font-size:30px;font-weight:bolder;border-bottom:1px solid;font-family:黑体;width:125px;">艺能培训</div>
-		<div style="margin-left:50px;border-left:1px solid rgba(121, 200, 225, 1);">
+		<div style="margin-left:50px;border-left:1px solid /* rgba(121, 200, 225, 1) */;">
 		<div id="id1" style="padding-top:80px;font-size:30px;font-weight:bolder;font-family:黑体;filter:alpha(opacity=60);opacity:0.6;cursor:pointer;">舞蹈班</div>
 		<div id="id2" style="padding-top:80px;font-size:30px;font-weight:bolder;font-family:黑体;filter:alpha(opacity=60);opacity:0.6;cursor:pointer;">艺术班</div>
 		<div id="id3" style="padding-top:80px;font-size:30px;font-weight:bolder;font-family:黑体;filter:alpha(opacity=60);opacity:0.6;cursor:pointer;">唱歌班</div>
@@ -68,7 +68,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</div>		
 		</div>
 		<div class="col-md-10" style="padding-left:0px;">
-		<div style="border-left:50px solid rgba(121, 200, 225, 1);padding-top:20px;">
+		<div style=" /*border-left:1px solid rgba(121, 200, 225, 1) */;padding-top:20px;">
 		<div id="train1">
 		<div style="text-align:center;"><img src="/images/traindetail/t1.PNG"></div>
 		<div style="overflow-y:auto; width:910px; height:380px;margin-top:10px;"><img alt="公司简介" src="/images/traindetail/t2.PNG" style="width:880px;"></div>

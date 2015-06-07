@@ -15,11 +15,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
    <link href="/css/news.css" rel="stylesheet">
    <script src="/js/jquery.min.js"></script>
    <script src="/bootstrap/js/bootstrap.min.js"></script>
-    <style type="text/css">
-   body{
-   background-color:rgba(233, 243, 248, 1);
-   }
-   </style>
    <script type="text/javascript" src="http://player.youku.com/jsapi">
 		
 		player = new YKU.Player('youkuplayer',{
@@ -55,31 +50,31 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
  <div class="container">
  <jsp:include page="head.jsp" />
- 	<div class="row">
+ 	<div class="row" style="padding-top:10px">
  	     <!--左侧视频播放start-->
  		<div class="col-md-8 col-lg-8" >
- 				<div id="youkuplayer" style="width:795px;height:600px">
+ 				<div id="youkuplayer" style="width:795px;height:761px">
  				</div>
  				<!--要播放视频列表start-->
  				<div >
- 				 	<img alt="" src="images/img01.jpg"   height="150px" style="border:1px solid grey" class="yuanjiao">
- 					<img alt="" src="images/img02.jpg"   height="150px" style="border:1px solid grey" class="yuanjiao" >
- 					<img alt="" src="images/img03.jpg"   height="150px" style="border:1px solid grey" class="yuanjiao">
+ 				 	<img alt="" src="images/img01.jpg"   height="170px" style="border:1px solid grey" class="yuanjiao">
+ 					<img alt="" src="images/img02.jpg"   height="170px" style="border:1px solid grey" class="yuanjiao" >
+ 					<img alt="" src="images/img03.jpg"   height="170px" style="border:1px solid grey" class="yuanjiao">
  				</div>
  				<!--要播放视频列表end-->
  		</div>
  		<!--左侧视频播放end-->
  		<!--右侧图片列表start-->
- 		<div class="col-md-4 col-lg-4" align="right" style="5px 5px" style="margin:10px">
- 			<img alt="" src="images/img01.jpg"  width="345px" height="150px" style="border:1px solid grey">
- 			<img alt="" src="images/img02.jpg"  width="345px" height="150px" style="border:1px solid grey">
- 			<img alt="" src="images/img03.jpg"  width="345px" height="150px" style="border:1px solid grey">
- 			<img alt="" src="images/img04.jpg"  width="345px" height="150px" style="border:1px solid grey">
- 			<img alt="" src="images/img05.jpg"  width="345px" height="150px" style="border:1px solid grey">
+ 		<div class="col-md-4 col-lg-4" align="right" style="5px 5px" style="margin-left: -18px;">
+ 			<img alt="" src="images/img01.jpg"  width="300px" height="190px" style="border:1px solid grey">
+ 			<img alt="" src="images/img02.jpg"  width="300px" height="190px" style="border:1px solid grey">
+ 			<img alt="" src="images/img03.jpg"  width="300px" height="190px" style="border:1px solid grey">
+ 			<img alt="" src="images/img04.jpg"  width="300px" height="190px" style="border:1px solid grey">
+ 			<img alt="" src="images/img05.jpg"  width="300px" height="190px" style="border:1px solid grey">
  		</div>
  		<!--右侧图片列表end-->
  	</div>
- 	<jsp:include page="foot2.jsp" />
+ 	<jsp:include page="foot.jsp" />
  </div>
 </body>
 </html>

@@ -24,7 +24,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <body>
  <div class="container">
  <jsp:include page="head.jsp" />
- 	<div class="row">
+ 	<div class="row" style="color:white;">
  		<div class="col-md-8 col-lg-8">
  			<div class="row" style="height:500px;">
  				<div class="col-md-4 col-lg-4">
@@ -32,34 +32,34 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
  				</div>
  				<div class="col-md-8 col-lg-8">
  					<c:if test="${not empty star1.chinese_name}">
- 						<div class="form-group">
-					    <label class="col-sm-3 control-label">姓名：</label>
-					    <div class="col-sm-9">
-					      ${star1.chinese_name}
-					    </div>
+ 						<div class="row">
+						    <label class="col-md-3 control-label">姓名：</label>
+						    <div class="col-md-9">
+						      ${star1.chinese_name}
+						    </div>
 						</div>
 					</c:if>
  					
 					<c:if test="${not empty star1.bieming}">
-						<div class="form-group">
-					    <label class="col-sm-3 control-label">别名:</label>
-					    <div class="col-sm-9">
-					      ${star1.bieming}
-					    </div>
-					</div>
+						<div class="row" >
+						    <label class="col-md-3 control-label">别名:</label>
+						    <div class="col-md-9">
+						      ${star1.bieming}
+						    </div>
+						</div>
 					</c:if>
 					
 					<c:if test="${not empty star1.nation}">
-						<div class="form-group">
-					    <label class="col-sm-3 control-label">民族：</label>
-					    <div class="col-sm-9">
-					      ${star1.nation}
-					    </div>
-					</div>
+						<div class="row">
+						    <label class="col-sm-3 control-label">民族：</label>
+						    <div class="col-sm-9">
+						      ${star1.nation}
+						    </div>
+						</div>
 					</c:if>
 					
 					<c:if test="${not empty star1.constellation}">
-						<div class="form-group">
+						<div class="row">
 					    <label class="col-sm-3 control-label">星座：</label>
 					    <div class="col-sm-9">
 					      ${ star1.constellation}
@@ -68,7 +68,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</c:if>
 					
 					<c:if test="${not empty star1.bloodtype}">
-						<div class="form-group">
+						<div class="row" >
 					    <label class="col-sm-3 control-label">血型：</label>
 					    <div class="col-sm-9">
 					     ${star1.bloodtype}
@@ -77,7 +77,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</c:if>
 					
 					<c:if test="${not empty star1.height}">
-						<div class="form-group">
+						<div class="row" >
 					    <label class="col-sm-3 control-label">身高：</label>
 					    <div class="col-sm-9">
 					      ${ star1.height}
@@ -86,7 +86,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</c:if>
 					
 					<c:if test="${not empty star1.weight}">
-						<div class="form-group">
+						<div class="row" >
 					    <label class="col-sm-3 control-label">体重：</label>
 					    <div class="col-sm-9">
 					      ${ star1.weight}
@@ -95,7 +95,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</c:if>
 					
 					<c:if test="${not empty star1.birthday}">
-						<div class="form-group">
+						<div class="row">
 					    <label class="col-sm-3 control-label">生日：</label>
 					    <div class="col-sm-9">
 					      ${ star1.birthday}
@@ -104,7 +104,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</c:if>
 					
 					<c:if test="${not empty  star1.birthplace}">
-						<div class="form-group">
+						<div class="row">
 					    <label class="col-sm-3 control-label">出生地：</label>
 					    <div class="col-sm-9">
 					      ${ star1.birthplace}
@@ -113,7 +113,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</c:if>
 					
 					<c:if test="${not empty star1.occupation}">
-						<div class="form-group">
+						<div class="row">
 					    <label class="col-sm-3 control-label">职业：</label>
 					    <div class="col-sm-9">
 					      ${ star1.occupation}
@@ -122,7 +122,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</c:if>
 					
 					<c:if test="${not empty star1.brokerfirm}">
-						<div class="form-group">
+						<div class="row">
 					    <label class="col-sm-3 control-label">经纪公司：</label>
 					    <div class="col-sm-9">
 					       ${ star1.brokerfirm}
@@ -131,7 +131,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</c:if>
 					
 					<c:if test="${not empty star1.animal}">
-						<div class="form-group">
+						<div class="row">
 					    <label class="col-sm-3 control-label">属相：</label>
 					    <div class="col-sm-9">
 					      ${ star1.animal}
@@ -140,7 +140,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</c:if>
 					
 					<c:if test="${not empty star1.representativeworks}">
-						<div class="form-group">
+						<div class="row">
 					    <label class="col-sm-3 control-label">代表作品：</label>
 					    <div class="col-sm-9">
 					      ${ star1.representativeworks}
@@ -149,7 +149,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</c:if>
 					
 					<c:if test="${not empty star1.residence}">
-						<div class="form-group">
+						<div class="row">
 					    <label class="col-sm-3 control-label">现居地：</label>
 					    <div class="col-sm-9">
 					      ${ star1.residence}
@@ -158,7 +158,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</c:if>
 					
 					<c:if test="${not empty star1.gratuateunivercity}">
-						<div class="form-group">
+						<div class="row">
 					    <label class="col-sm-3 control-label">毕业院校：</label>
 					    <div class="col-sm-9">
 					      ${ star1.gratuateunivercity}
@@ -167,7 +167,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</c:if>
 					
 					<c:if test="${not empty star1.achivements}">
-						<div class="form-group">
+						<div class="row">
 					    <label class="col-sm-3 control-label">成就：</label>
 					    <div class="col-sm-9">
 					      ${ star1.achivements}
@@ -176,7 +176,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</c:if>
 					
 					<c:if test="${not empty star1.nationality}">
-						<div class="form-group">
+						<div class="row">
 					    <label class="col-sm-3 control-label">国籍：</label>
 					    <div class="col-sm-9">
 					      ${ star1.nationality}
@@ -185,7 +185,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</c:if>
 					
 					<c:if test="${not empty star1.sex}">
-						<div class="form-group">
+						<div class="row">
 					    <label class="col-sm-3 control-label">性别：</label>
 					    <div class="col-sm-9">
 					      ${ star1.sex}
@@ -194,7 +194,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</c:if>
 					
 					<c:if test="${not empty star1.specialty}">
-						<div class="form-group">
+						<div class="row">
 						    <label class="col-sm-3 control-label">特长：</label>
 						    <div class="col-sm-9">
 						      ${ star1.specialty}
@@ -202,7 +202,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						</div>
 					</c:if>
 					<c:if test="${not empty star1.musicalstyle}">
-					    <div class="form-group">
+					    <div class="row">
 						    <label class="col-sm-3 control-label">音乐风格：</label>
 						    <div class="col-sm-9">
 						      ${ star1.musicalstyle}
@@ -220,13 +220,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
  			
  		</div>
  		<div class="col-md-4 col-lg-4">
- 			<img alt="" src="/images/img01.jpg" class="row" height="300px">
- 			<img alt="" src="/images/img01.jpg" class="row" height="300px">
- 			<img alt="" src="/images/img01.jpg" class="row" height="300px">
- 			<img alt="" src="/images/img01.jpg" class="row" height="300px">
- 			<img alt="" src="/images/img01.jpg" class="row" height="300px">
+ 			<img alt="" src="/images/img01.jpg" class="row" height="250px">
+ 			<img alt="" src="/images/img01.jpg" class="row" height="250px">
+ 			<img alt="" src="/images/img01.jpg" class="row" height="250px">
+ 			
  		</div>
  	</div>
+ <jsp:include page="foot2.jsp" />
  </div>
 </body>
 </html>
