@@ -41,7 +41,7 @@ public class NewsController {
 	
 	
 	
-	@RequestMapping({ "/", "/News" })
+	@RequestMapping({ "/News" })
 	public String getTrain(HttpServletRequest req,HttpServletResponse resp){
 		String newsId = req.getParameter("newsId");
 		int news_id = 0;

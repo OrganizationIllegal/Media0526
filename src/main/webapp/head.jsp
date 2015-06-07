@@ -25,7 +25,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div style="color:white;font-size:10px;font-family:楷体;">GUESTPHOTO</div>
 			</div>
 			<div class="col-md-1" style="padding-left:10px;padding-right:0px;border-color:white;border-right-style:solid;border-right-width:1px;padding-top:5px;padding-bottom:39px;">
+
 				<div style="padding-left:10px;margin-bottom:10px;"><a href="/Artist" style="color:white;font-size:20px;font-family:楷体;">艺人</a></div>
+
 				<div style="color:white;font-size:10px;font-family:楷体;">DOING</div>
 			</div>
 			<div class="col-md-1" style="padding-left:10px;padding-right:0px;border-color:white;border-right-style:solid;border-right-width:1px;padding-top:5px;padding-bottom:5px;">

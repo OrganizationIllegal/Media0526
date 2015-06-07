@@ -39,7 +39,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <body>
 <div class="container">
 		<jsp:include page="head.jsp" />
-		<div class="row" style="height:650px;margin-top:50px;">
+		<div class="row" style="margin-top:50px;">
 		<div class="col-md-3" style="padding-right:0px;">
 		<div style="text-align:center;font-size:20px;font-weight:bolder;padding-bottom:20px;border-bottom:1px solid">NEWS TREND</div>
 		<!-- 新闻目录 -->
@@ -134,6 +134,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
  <!--  <div style="overflow-y:auto; width:850px; height:300px;text-align:center;margin-top:30px;margin-bottom:30px;"><img alt="明星介绍" src="/images/news/news13.PNG"></div>
 		</div>
 			
+
 		</div>-->
 		</div> 
 		<jsp:include page="foot.jsp" />

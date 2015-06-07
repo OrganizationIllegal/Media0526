@@ -27,14 +27,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <body>
 <div class="container">
 		<jsp:include page="head.jsp" />
-		<div class="row" style="margin-top:30px;">
+		<div class="row" style="">
 		<div class="col-md-9">
 		<div style="overflow-y:auto; width:850px; height:850px;">
 		<div id="artist1">
 		<div style="text-align:center;"><img alt="" src="/images/artist/big1.PNG" style="width:700px;height:550px;"></div>
 		<div style="text-align:center;margin-top:30px;"><img alt="" src="/images/artist/jianjie1.PNG"></div>
 		</div>
-		<div id="artist2">
+		<div id="artist2" style="display:none;">
 		<div style="text-align:center;"><img alt="" src="/images/artist/big1.PNG" style="width:700px;height:550px;"></div>
 		<div style="text-align:center;margin-top:30px;"><img alt="" src="/images/artist/jianjie1.PNG"></div>
 		</div>
@@ -48,7 +48,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<div id="id5" style="margin-bottom:10px;"><img alt="" src="/images/artist/xiao5.PNG" style="width:240px;height:170px;cursor:pointer;"></div>	
 		</div>
 		</div>
-		<jsp:include page="foot.jsp" />
+		<jsp:include page="foot2.jsp" />
 </div>
 </body>
 </html>

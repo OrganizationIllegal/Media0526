@@ -52,7 +52,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <body>
 <div class="container">
 		<jsp:include page="head.jsp" />
-		<div class="row" style="height:650px;margin-top:50px;">
+		<div class="row" style="margin-top:30px;">
 		<div class="col-md-3" style="padding-right:0px;">
 		<div style="text-align:center;font-size:20px;font-weight:bolder;padding-bottom:20px;border-bottom:1px solid">ABOUT US</div>
 		<div id="erjiu1" style="cursor:pointer;margin-top:20px;margin-left:20px;filter:alpha(opacity=60);opacity:0.6;"><img alt="关于二九" src="/images/aboutus/left1.PNG" style="width:100px;"><span style="font-size:16px;font-weight:bolder;margin-left:20px;">关于二九</span></div>
@@ -62,19 +62,19 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<div class="col-md-9" style="padding-left:0px;">
 		<div id="erjiu2" style="border-left:1px solid;">
 		<div style="text-align:center;font-size:20px;font-weight:bolder;padding-bottom:10px;padding-top:10px;border-bottom:1px solid">公司简介</div>
-		<div style="overflow-y:auto; width:863px; height:600px;text-align:center;"><img alt="公司简介" src="/images/aboutus/jianjie.png"></div>
+		<div style="overflow-y:auto; width:863px; height:670px;text-align:center;"><img alt="公司简介" src="/images/aboutus/jianjie.png"></div>
 		</div>
 		<div id="zhaopin2" style="border-left:1px solid;display:none;">
 		<div style="text-align:center;font-size:20px;font-weight:bolder;padding-bottom:10px;padding-top:10px;border-bottom:1px solid">招聘信息</div>
-		<div style="overflow-y:auto; width:863px; height:600px;text-align:center;"><img alt="招聘信息" src="/images/aboutus/zhaopin.PNG"></div>
+		<div style="overflow-y:auto; width:863px; height:670px;text-align:center;"><img alt="招聘信息" src="/images/aboutus/zhaopin.PNG"></div>
 		</div>
 		<div id="lianxi2" style="border-left:1px solid;display:none;">
 		<div style="text-align:center;font-size:20px;font-weight:bolder;padding-bottom:10px;padding-top:10px;border-bottom:1px solid">联系我们</div>
-		<div style="overflow-y:auto; width:863px; height:600px;text-align:center;"><img alt="联系我们" src="/images/aboutus/lianxi.PNG"></div>
+		<div style="overflow-y:auto; width:863px; height:670px;text-align:center;"><img alt="联系我们" src="/images/aboutus/lianxi.PNG"></div>
 		</div>
 		</div>
 		</div>
-		<jsp:include page="foot.jsp" />
+		<jsp:include page="foot2.jsp" />
 </div>
 </body>
 </html>
