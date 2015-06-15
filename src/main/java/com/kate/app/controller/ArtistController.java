@@ -22,13 +22,14 @@ public class ArtistController {
 	@Autowired
 	private StarInfoDAO starInfoDAO;
 	
-	@RequestMapping({ "/", "/Artist" })
+	@RequestMapping({"/Artist" })
 	public String getTrain(HttpServletRequest req,HttpServletResponse resp){
 		List<StarInfo> list=new ArrayList<StarInfo>();
 		list=starInfoDAO.findAll();
 		StarInfo star1=list.get(0);
 		req.setAttribute("star1", star1);
-		return "artistdetail.jsp";
+		//return "artistdetail.jsp";
+		return "artist.jsp";
 	}
 
 }

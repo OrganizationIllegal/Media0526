@@ -55,4 +55,5 @@ public class StarInfoDAO extends BaseDao {
     }
 		return list;
 	}
+	
 }

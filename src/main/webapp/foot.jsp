@@ -14,8 +14,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div style="text-align:center;font-size:16px;margin-bottom:10px;">全国免费热线：400-6163520&nbsp;三亚电话：0893-88632291&nbsp;0398-83632292&nbsp;QQ:4006163520</div>
 				<div style="text-align:center;font-size:16px;margin-bottom:10px;">地址：三亚市河东区泰康商务大厦一二层（市双府旁）</div>
 				<div style="text-align:center;margin-top:30px;">
-					<!-- <button type="button" class="btn btn-default btn-lg" style="width:240px;padding:5px 10px;background-color:#24caa7;font-size:20px;"><span class="glyphicon glyphicon-phone-alt"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;详细联系方式</button> -->
-                    <img alt="联系方式" src="/images/footer1.PNG">
+					<button type="button" class="btn btn-default btn-lg" style="width:240px;padding:5px 10px;/* background-color:#24caa7; */font-size:20px;"><span class="glyphicon glyphicon-phone-alt"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;详细联系方式</button>
+                    <!-- <img alt="联系方式" src="/images/footer1.PNG"> -->
 				</div>
 				<!-- <div style="text-align:center;margin-top:10px;">qazwsxedcrfvtgbyhnujmqazwsxedcrfvtgbyhnujm</div> -->
 			</div>

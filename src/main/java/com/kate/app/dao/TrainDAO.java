@@ -20,6 +20,7 @@ public class TrainDAO extends BaseDao{
 			String sql = " select * from Train";
 	        Statement stmt = con.createStatement();
 			ResultSet rs = stmt.executeQuery(sql);
+			
 			while(rs.next()){					
 				Train data = new Train();
 				data.setId(rs.getInt("id"));

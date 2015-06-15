@@ -260,7 +260,7 @@ function pop4(){
 			</div>
 			<div class="col-md-5"></div>
 		</div>
-		<jsp:include page="foot2.jsp" />
+		<jsp:include page="foot.jsp" />
 	</div>
 	<!-- 模态框 -->
    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" 

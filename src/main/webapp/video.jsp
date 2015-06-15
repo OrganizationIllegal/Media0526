@@ -65,12 +65,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
  		</div>
  		<!--左侧视频播放end-->
  		<!--右侧图片列表start-->
- 		<div class="col-md-4 col-lg-4" align="right" style="5px 5px" style="margin-left: -18px;">
- 			<img alt="" src="images/img01.jpg"  width="300px" height="190px" style="border:1px solid grey">
- 			<img alt="" src="images/img02.jpg"  width="300px" height="190px" style="border:1px solid grey">
- 			<img alt="" src="images/img03.jpg"  width="300px" height="190px" style="border:1px solid grey">
- 			<img alt="" src="images/img04.jpg"  width="300px" height="190px" style="border:1px solid grey">
- 			<img alt="" src="images/img05.jpg"  width="300px" height="190px" style="border:1px solid grey">
+ 		<div class="col-md-4 col-lg-4" align="right" style="margin-left: -18px;padding-right:80px;">
+ 			<img alt="" src="images/img01.jpg"  width="250px" height="190px" style="border:1px solid grey">
+ 			<img alt="" src="images/img02.jpg"  width="250px" height="190px" style="border:1px solid grey">
+ 			<img alt="" src="images/img03.jpg"  width="250px" height="190px" style="border:1px solid grey">
+ 			<img alt="" src="images/img04.jpg"  width="250px" height="190px" style="border:1px solid grey">
+ 			<img alt="" src="images/img05.jpg"  width="250px" height="190px" style="border:1px solid grey">
  		</div>
  		<!--右侧图片列表end-->
  	</div>

@@ -10,19 +10,19 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
  <style type="text/css">
    body{
    /* background-color:rgba(233, 243, 248, 1); */
-    background: -moz-linear-gradient(top, #000000 0%, #ffffff 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(100%,#ffffff));
-    background: -webkit-linear-gradient(top, #000000 0%,#ffffff 100%);
-    background: -o-linear-gradient(top, #000000 0%,#ffffff 100%);
-    background: -ms-linear-gradient(top, #000000 0%,#ffffff 100%);
-    background: linear-gradient(to bottom, #000000 0%,#ffffff 100%);
+    background: -moz-linear-gradient(top, #666666 0%, #ffffff 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#666666), color-stop(100%,#ffffff));
+    background: -webkit-linear-gradient(top, #666666 0%,#ffffff 100%);
+    background: -o-linear-gradient(top, #666666 0%,#ffffff 100%);
+    background: -ms-linear-gradient(top, #666666 0%,#ffffff 100%);
+    background: linear-gradient(to bottom, #666666 0%,#ffffff 100%);
  
    }
    </style>
 </head>
 <body>
  <!-- header start -->
-		<div class="row" style="padding-top:30px;/* background-color:#000000; */margin-left: 0px;margin-right: 0px;">
+		<div class="row" style="padding-top:30px;/* background-color:#666666; */margin-left: 0px;margin-right: 0px;">
 			<div class="col-md-3 col-md-offset-1">
 				<!-- <img alt="logo"  src="/images/logo.PNG"> -->
 			</div>

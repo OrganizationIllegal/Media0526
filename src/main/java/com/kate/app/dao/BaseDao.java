@@ -16,18 +16,21 @@ public class BaseDao {
 	static {
 		System.out.println("fffffffff");
 		try{   
-		    //����MySql������   
-		    Class.forName("com.mysql.jdbc.Driver") ;   
+		    //锟斤拷锟斤拷MySql锟斤拷锟斤拷锟斤拷   
+		    Class.forName("com.mysql.jdbc.Driver") ;  
+		    System.out.println("fffffffff11111");
 		}
 		catch(ClassNotFoundException e){   
-		    System.out.println("�Ҳ���������� ��������ʧ�ܣ�");   
-		    e.printStackTrace() ;   
+		    e.printStackTrace();   
 		}   
 		try {
+			System.out.println("fffffff222222ff11111");
             url = "jdbc:mysql://54.187.200.118:3306/media";
             username = "root";
             password = "admin";
+            System.out.println("fffffff22dddddddddddd2222ff11111");
             con = DriverManager.getConnection(url, username, password);
+            System.out.println(url);
         } catch (Exception e) {
            
         }
